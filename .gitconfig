@@ -34,7 +34,7 @@
     cl = clone --recursive
 
     # Commit staged changes
-	ca = commit -av
+	c = commit -av
 
     # Commit all changes
 	ca = !git add -A && git commit -av
