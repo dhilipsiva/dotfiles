@@ -3,4 +3,6 @@ dotfiles
 
 My dotfiles
 
-Will be updating soon...
+
+## Thanks to:
+[mathiasbynens](https://github.com/mathiasbynens/dotfiles)
