@@ -327,3 +327,15 @@ function np() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX
 }
+o
+
+# A function to install vim plugins
+# Make sure you are in `~` folder when you execute this command
+function vim_install(){
+    git submodule add -f $1 .vim/bundle/$2
+}
+
+# Just a test function
+function ttest(){
+    echo $1 $2
+}
