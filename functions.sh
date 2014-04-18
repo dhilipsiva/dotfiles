@@ -329,10 +329,10 @@ function tre() {
 }
 o
 
-# A function to install vim plugins
+# A function to install vim plugins (Vim INstaller)
 # Make sure you are in `~` folder when you execute this command
-function vim_install(){
-    git submodule add -f $1 .vim/bundle/$2
+function vin(){
+    cd ~ && git submodule add -f $1 .vim/bundle/$2
 }
 
 # Just a test function
