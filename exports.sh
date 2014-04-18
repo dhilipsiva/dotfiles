@@ -11,7 +11,7 @@ export LC_NUMERIC="en_US.UTF-8"
 export LC_TIME="en_US.UTF-8"
 
 # Make vim the default editor
-export EDITOR="mvim"
+export EDITOR="vim"
 
 # Larger bash history (allow 32³ entries; default is 500)
 export HISTSIZE=32768
