@@ -1,5 +1,5 @@
 # Load the shell dotfiles, and then some:
-for file in ~/{path,exports,aliases,functions,private}.sh; do
+for file in ~/{exports,aliases,functions,private}.sh; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
 unset file
