@@ -35,11 +35,6 @@ function commit {
     fi
 }
 
-# brew bash completion
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-    . $(brew --prefix)/etc/bash_completion
-fi
-
 # open Dash docs
 function dash {
     open "dash://$*"
