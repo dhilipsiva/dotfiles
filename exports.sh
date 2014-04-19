@@ -20,9 +20,6 @@ export HISTCONTROL=ignoredups
 # Make some commands not show up in history
 export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help"
 
-# Highlight section titles in manual pages
-export LESS_TERMCAP_md="$ORANGE"
-
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X"
 
@@ -73,3 +70,12 @@ export WHITE
 export BOLD
 export RESET
 export PS1=' \[$MAGENTA\]\W \[${BOLD}${PURPLE}\]->\[$RESET\] '
+
+# Highlight section titles in manual pages
+export LESS_TERMCAP_mb="$MAGENTA"
+export LESS_TERMCAP_md="$GREEN"
+export LESS_TERMCAP_me=$'\E[0m'
+export LESS_TERMCAP_se=$'\E[0m'
+export LESS_TERMCAP_so="$ORANGE"
+export LESS_TERMCAP_ue=$'\E[0m'
+export LESS_TERMCAP_us="$PURPLE"
