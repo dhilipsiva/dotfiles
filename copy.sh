@@ -9,6 +9,7 @@
 # Copy the required files into home folder
 rsync \
     --exclude ".git/" \
+    --exclude ".ssh/" \
     --exclude ".DS_Store" \
     --exclude "install.sh" \
     --exclude "README.md" \
