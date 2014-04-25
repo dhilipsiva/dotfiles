@@ -5,6 +5,8 @@
 #
 # Distributed under terms of the MIT license.
 #
+
+# Copy the required files into home folder
 rsync \
     --exclude ".git/" \
     --exclude ".DS_Store" \
