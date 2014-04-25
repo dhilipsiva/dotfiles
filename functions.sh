@@ -27,14 +27,6 @@ function goog {
     open "https://google.com/search?q=$*"
 }
 
-function commit {
-    if [[ $1 = "" ]]; then
-        git commit -m "Quick commit"
-    else
-        git commit -m "$*"
-    fi
-}
-
 # open Dash docs
 function dash {
     open "dash://$*"
@@ -47,11 +39,6 @@ function search {
 function tc {
     # Just a true caller shortcut
     open "http://www.truecaller.com/in/$*"
-}
-
-function irc-ext {
-     . ~/ENV/irc-ext/bin/activate
-     cd ~/WIP/irc-ext/
 }
 
 # Function for my site - dhilipsiva.com

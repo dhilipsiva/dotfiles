@@ -30,9 +30,11 @@
     di = !"d() { git diff --patch-with-stat HEAD~$1; }; git diff-index --quiet HEAD -- || clear; d"
 
     # Pull in remote changes for the current repository and all its submodules
-    p = !"git pull; git submodule foreach git pull origin master"
+    pl = !"git pull origin $(git rev-parse --abbrev-ref HEAD)"
 
-    ps = push
+    p = !"git push origin $(git rev-parse --abbrev-ref HEAD)"
+
+    sy = !"git pull origin $(git rev-parse --abbrev-ref HEAD) && git push origin $(git rev-parse --abbrev-ref HEAD)"
 
     # Clone a repository including all submodules
     cl = clone --recursive

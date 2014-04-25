@@ -22,7 +22,7 @@ echo "Brew is not installed"
 
 # Copy the required files to `dotfiles`
 cd ~/WIP/dotfiles
-cp -f ~/{.bash_profile,.gitignore_global,.vimrc,Brewfile,Caskfile,aliases.sh,exports.sh,functions.sh} .
+cp -f ~/{.bash_profile,.gitignore_global,.gitconfig,.vimrc,Brewfile,Caskfile,aliases.sh,exports.sh,functions.sh,update.sh} .
 git add -A .
 
 {
