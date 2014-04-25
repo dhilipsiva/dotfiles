@@ -20,8 +20,14 @@ Mac OS requirement:
 * Homebrew Cask (Optional)
 
 Copy-Paste the following line in your terminal
-
 `curl https://raw.githubusercontent.com/dhilipsiva/dotfiles/master/install.sh | sh`
+
+## Updating
+
+Just run the following command from your termianl
+`~/update.sh`
+
+That is it.
 
 ## Thanks to:
 [mathiasbynens](https://github.com/mathiasbynens/dotfiles)'s dotfiles
