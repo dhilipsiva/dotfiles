@@ -16,8 +16,8 @@ Common Requirements:
 
 Mac OS requirement:
 * Xcode command line tools
-* Homebrew
-* Homebrew Cask
+* Homebrew (for scripts to run properly)
+* Homebrew Cask (Optional)
 
 Copy-Paste the following line in your terminal
 
