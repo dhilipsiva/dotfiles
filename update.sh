@@ -49,4 +49,8 @@ echo "Noting to commit..."
 ./copy.sh
 
 # Push the updated dotfiles
-git push origin master
+{
+    git push origin master
+} || {
+echo "Sorry buddy, you dont have permisson fo push to my repo :("
+}
