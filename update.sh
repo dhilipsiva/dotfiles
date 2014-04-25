@@ -17,7 +17,7 @@ set -e
     brew prune
 
 } || {
-echo "Brew is not installed"
+echo "$BOLD $GREEN Brew is not installed $RESET"
 }
 
 # Copy the required files to `dotfiles`
@@ -28,7 +28,7 @@ git add -A .
 {
     git commit -m "Updating dotfiles..."
 } || {
-echo "Noting to commit..."
+echo "$BOLD $GREEN Noting to commit... $RESET"
 }
 
 # Update the dependencies
@@ -40,9 +40,9 @@ git submodule foreach --recursive git pull
 git add -A .
 
 {
-    git commit -m "Updating dependencies..."
+    git commit -m "$BOLD $GREEN Updating dependencies... $RESET"
 } || {
-echo "Noting to commit..."
+echo "$BOLD $GREEN Noting to commit... $RESET"
 }
 
 # Copy the updated stuff into home path
@@ -52,5 +52,5 @@ echo "Noting to commit..."
 {
     git push origin master
 } || {
-echo "Sorry buddy, you dont have permisson fo push to my repo :("
+echo "$BOLD $GREEN Sorry buddy, you dont have permisson fo push to my repo :( $RESET"
 }
