@@ -28,7 +28,7 @@ Copy-Paste the following line in your terminal
 Just run the following command from your termianl
 `~/update.sh`
 
-That is it.
+Or if you prefer to use the latest update scripts, execute:
+`curl https://raw.githubusercontent.com/dhilipsiva/dotfiles/master/update.sh | sh`
 
-## Thanks to:
-[mathiasbynens](https://github.com/mathiasbynens/dotfiles)'s dotfiles
+That is it.
