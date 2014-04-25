@@ -11,6 +11,7 @@ rsync \
     --exclude ".git/" \
     --exclude ".ssh/" \
     --exclude ".DS_Store" \
+    --exclude "copy.sh" \
     --exclude "install.sh" \
     --exclude "README.md" \
     --exclude "LICENSE.txt" \
