@@ -19,4 +19,3 @@ rm -rf ~/WIP/dotfiles
 git clone --recursive git@github.com:dhilipsiva/dotfiles.git ~/WIP/dotfiles
 cd ~/WIP/dotfiles
 ./copy.sh
-source ~/.bash_profile

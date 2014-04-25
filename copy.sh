@@ -14,3 +14,8 @@ rsync \
     --exclude "README.md" \
     --exclude "LICENSE.txt" \
     -av --no-perms . ~
+{
+    source ~/.bash_profile
+} || {
+echo "Some error during reading bash_profile..."
+}
