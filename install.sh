@@ -12,6 +12,5 @@ mkdir -p ~/WIP
 rm -rf ~/WIP/dotfiles
 git clone --recursive git@github.com:dhilipsiva/dotfiles.git ~/WIP/dotfiles
 cd ~/WIP/dotfiles
-rsync --exclude ".git/" --exclude ".DS_Store" --exclude "install.sh" \
-	--exclude "README.md" --exclude "LICENSE.txt" -av --no-perms . ~
+./copy.sh
 source ~/.bash_profile

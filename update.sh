@@ -5,16 +5,31 @@
 #
 # Distributed under terms of the MIT license.
 #
-gem update
-brew update
-brew upgrade
-brew cleanup
-brew prune
+set -e
+
+# gem update
+
+# if [ "$(uname)" == "Darwin" ]; then
+    # brew update
+    # brew upgrade
+    # brew cleanup
+    # brew prune
+# fi
+
+cd ~/WIP/dotfiles
+cp -f ~/{.bash_profile,.gitignore_global,.vimrc,Brewfile,Caskfile,aliases.sh,exports.sh,functions.sh} .
+git add -A .
+git commit -m "Updating dotfiles..."
+
 git pull origin master
 git submodule init
 git submodule update
 git submodule foreach --recursive git checkout master
 git submodule foreach --recursive git pull
-git add .
-git commit -m "Updating..."
+
+./copy.sh
+
+git add - A .
+git commit -m "Updating dependencies..."
+
 git push origin master
