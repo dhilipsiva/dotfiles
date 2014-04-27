@@ -314,7 +314,7 @@ function tre() {
 # A function to install vim plugins (Vim INstaller)
 # Make sure you are in `~` folder when you execute this command
 function vin(){
-    cd ~ && git submodule add -f $1 .vim/bundle/$2
+    cd ~/WIP/dotfiles && git submodule add -f $1 .vim/bundle/$2
 }
 
 # Just a test function

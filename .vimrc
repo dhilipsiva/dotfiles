@@ -54,6 +54,11 @@ let g:templates_no_autocmd = 1
 let python_highlight_all = 1
 cabbr <expr> %% expand('%:p:h')
 
-" Spell Check
+" Spell Check - `lexical` plugin
 
-autocmd BufRead,BufNewFile *.txt,*.md setlocal spell
+augroup lexical
+  autocmd!
+  autocmd FileType markdown call lexical#init()
+  autocmd FileType textile call lexical#init()
+  autocmd FileType text call lexical#init()
+augroup END
