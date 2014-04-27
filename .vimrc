@@ -55,10 +55,7 @@ let python_highlight_all = 1
 cabbr <expr> %% expand('%:p:h')
 
 " Spell Check - `lexical` plugin
-
 augroup lexical
   autocmd!
-  autocmd FileType markdown call lexical#init()
-  autocmd FileType textile call lexical#init()
-  autocmd FileType text call lexical#init()
+  au BufNewFile,BufReadPost *.md,*.txt,*.mkd,*.markdown call lexical#init()
 augroup END
