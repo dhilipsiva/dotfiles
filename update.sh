@@ -40,7 +40,7 @@ git submodule foreach --recursive git pull
 git add -A .
 
 {
-    git commit -m "$BOLD $GREEN Updating dependencies... $RESET"
+    git commit -m "Updating dependencies..."
 } || {
 echo "$BOLD $GREEN Noting to commit... $RESET"
 }
