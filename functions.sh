@@ -321,3 +321,8 @@ function vin(){
 function ttest(){
     echo $1 $2
 }
+
+function style {
+     . ~/ENV/style/bin/activate
+     cd ~/WIP/style.js/
+}
