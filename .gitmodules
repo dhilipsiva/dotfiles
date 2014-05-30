@@ -67,9 +67,6 @@
 [submodule ".vim/bundle/snippets"]
 	path = .vim/bundle/snippets
 	url = git@github.com:honza/vim-snippets.git
-[submodule ".vim/bundle/supertab"]
-	path = .vim/bundle/supertab
-	url = git@github.com:ervandew/supertab.git
 [submodule ".vim/bundle/surround"]
 	path = .vim/bundle/surround
 	url = git@github.com:tpope/vim-surround.git
@@ -91,3 +88,6 @@
 [submodule ".vim/bundle/jade"]
 	path = .vim/bundle/jade
 	url = git@github.com:digitaltoad/vim-jade.git
+[submodule ".vim/bundle/youCompleteMe"]
+	path = .vim/bundle/youCompleteMe
+	url = git@github.com:Valloric/YouCompleteMe.git
