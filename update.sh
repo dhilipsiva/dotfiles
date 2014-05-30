@@ -15,7 +15,7 @@ set -e
     brew upgrade
     brew cleanup
     brew prune
-
+    brew cask update
 } || {
 echo "$BOLD $GREEN Brew is not installed $RESET"
 }

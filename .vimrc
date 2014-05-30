@@ -18,7 +18,7 @@ let g:username = "dhilipsiva"
 
 set tabstop=4
 set shiftwidth=4
-au BufNewFile,BufReadPost *.coffee,*.rb,*.yml,*.yaml setl tabstop=2 shiftwidth=2
+au BufNewFile,BufReadPost *.coffee,*.rb,*.yml,*.yaml,*.js,*.jade setl tabstop=2 shiftwidth=2
 
 set expandtab
 
