@@ -45,9 +45,6 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
 alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 
-# Enhanced WHOIS lookups
-alias whois="whois -h whois-servers.net"
-
 # Flush Directory Service cache
 alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
 
@@ -121,13 +118,7 @@ done
 # Make Grunt print stack traces by default
 command -v grunt > /dev/null && alias grunt="grunt --stack"
 
-# Stuff I never really use but cannot delete either because of http://xkcd.com/530/
-alias stfu="osascript -e 'set volume output muted true'"
-alias pumpitup="osascript -e 'set volume 7'"
-alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
-
 # Kill all the tabs in Chrome to free up memory
-# [C] explained: http://www.commandlinefu.com/commands/view/402/exclude-grep-from-your-grepped-output-of-ps-alias-included-in-description
 alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
 
 # Lock the screen (when going AFK)
@@ -135,6 +126,3 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
-
-# Faster npm for europeans
-command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.eu"

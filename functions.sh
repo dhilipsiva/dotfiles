@@ -33,7 +33,7 @@ function dash {
 }
 
 function search {
-    grep -irl --exclude=\*.{pyc,swp,un~,png,jpg} --exclude-dir=".git" --color "$*" .
+    grep -irl --exclude=\*.{pyc,swp,un~,png,jpg} --exclude-dir=".git" --exclude-dir="node_modules" --color "$*" .
 }
 
 function tc {
@@ -325,4 +325,9 @@ function ttest(){
 function style {
      . ~/ENV/style/bin/activate
      cd ~/WIP/style.js/
+}
+
+function node_test {
+    . ~/ENV/node_test/bin/activate
+    cd ~/WIP/node_test/
 }
