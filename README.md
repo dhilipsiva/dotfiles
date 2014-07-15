@@ -5,7 +5,7 @@ My dotfiles
 
 ## Installation
 
-WARNING: Please take a back-up of your dotfiles if you have any. This file may overwrite some stuff in `~` and `~/WIP` and `~/WIP/dotfiles` directories.
+WARNING: Please take a back-up of your dotfiles if you have any. This file may overwrite some stuff in `~` and `~/Projects` and `~/Projects/dotfiles` directories.
 
 ### Requirements
 
