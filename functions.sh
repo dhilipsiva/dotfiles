@@ -44,13 +44,13 @@ function tc {
 # Function for my site - dhilipsiva.com
 function site {
      . ~/ENV/site/bin/activate
-     cd ~/WIP/site/
+     cd ~/Projects/site/
 }
 
 # Activate an environment
 function act {
     . ~/ENV/$(@x_repo $*)/bin/activate
-    cd ~/WIP/$(@x_repo $*)
+    cd ~/Projects/$(@x_repo $*)
 }
 
 # Simple calculator
@@ -314,7 +314,7 @@ function tre() {
 # A function to install vim plugins (Vim INstaller)
 # Make sure you are in `~` folder when you execute this command
 function vin(){
-    cd ~/WIP/dotfiles && git submodule add -f $1 .vim/bundle/$2
+    cd ~/Projects/dotfiles && git submodule add -f $1 .vim/bundle/$2
 }
 
 # Just a test function
@@ -324,10 +324,10 @@ function ttest(){
 
 function style {
      . ~/ENV/style/bin/activate
-     cd ~/WIP/style.js/
+     cd ~/Projects/style.js/
 }
 
 function node_test {
     . ~/ENV/node_test/bin/activate
-    cd ~/WIP/node_test/
+    cd ~/Projects/node_test/
 }
