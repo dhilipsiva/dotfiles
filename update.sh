@@ -21,7 +21,7 @@ echo "$BOLD $GREEN Brew is not installed $RESET"
 }
 
 # Copy the required files to `dotfiles`
-cd ~/WIP/dotfiles
+cd ~/Projects/dotfiles
 cp -f ~/{.bash_profile,.gitignore_global,.gitconfig,.vimrc,Brewfile,Caskfile,aliases.sh,exports.sh,functions.sh,update.sh} .
 git add -A .
 
