@@ -69,7 +69,7 @@ export PURPLE
 export WHITE
 export BOLD
 export RESET
-export PS1=' \[${BOLD}${MAGENTA}\]\W \[$RESET\] 🙌  '
+export PS1=' \[${BOLD}${MAGENTA}\]\W\[$RESET\] 🙌  '
 
 # Highlight section titles in manual pages
 export LESS_TERMCAP_mb="$MAGENTA"
