@@ -69,7 +69,12 @@ export PURPLE
 export WHITE
 export BOLD
 export RESET
-export PS1=' \[${BOLD}${MAGENTA}\]\W\[$RESET\] 🙌  '
+
+if [ "$(uname)" == "Darwin" ]; then
+    export PS1=' \[${BOLD}${MAGENTA}\]\W\[$RESET\] 🙌  '
+else
+    export PS1=' \[${BOLD}${MAGENTA}\]\W \[$GREEN\]->\[$RESET\] '
+fi
 
 # Highlight section titles in manual pages
 export LESS_TERMCAP_mb="$MAGENTA"

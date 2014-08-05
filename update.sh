@@ -8,17 +8,18 @@
 
 # Stop on first error
 set -e
-
-# Update brew stuff
-{
-    brew update
-    brew upgrade
-    brew cleanup
-    brew prune
-    brew cask update
-} || {
-echo "$BOLD $GREEN Brew is not installed $RESET"
+if [ "$(uname)" == "Darwin" ]; then
+    # Update brew stuff
+    {
+        brew update
+        brew upgrade
+        brew cleanup
+        brew prune
+        brew cask update
+    } || {
+    echo "$BOLD $GREEN Brew is not installed $RESET"
 }
+fi
 
 # Copy the required files to `dotfiles`
 cd ~/Projects/dotfiles
