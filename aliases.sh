@@ -14,6 +14,7 @@ alias d='d'
 alias q="exit"
 alias ds="./manage.py shell" # Django Shell
 alias t="date"
+alias r="rails"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
