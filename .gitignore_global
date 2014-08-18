@@ -38,7 +38,6 @@ Thumbs.db
 
 
 .sass-cache/
-Gemfile.lock
 *.swp
 *.swo
 *.pyc

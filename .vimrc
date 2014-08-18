@@ -66,3 +66,5 @@ augroup END
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,.git/*,node_modules
 
 au BufNewFile,BufRead *.py,*js set colorcolumn=80
+
+autocmd BufNewFile,BufRead *.cap   set syntax=ruby
