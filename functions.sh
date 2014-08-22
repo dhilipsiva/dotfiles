@@ -331,3 +331,7 @@ function node_test {
     . ~/ENV/node_test/bin/activate
     cd ~/Projects/node_test/
 }
+
+function tunnel {
+    ngrok -subdomain=dhilipsiva $1
+}
