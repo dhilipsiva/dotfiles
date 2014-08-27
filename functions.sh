@@ -33,7 +33,12 @@ function dash {
 }
 
 function search {
-    grep -irl --exclude=\*.{pyc,swp,un~,png,jpg} --exclude-dir=".git" --exclude-dir="node_modules" --color "$*" .
+    grep -irl \
+        --exclude=\*.{pyc,swp,un~,png,jpg} \
+        --exclude-dir=".git" \
+        --exclude-dir="node_modules" \
+        --exclude-dir="tmp" \
+        --color "$*" .
 }
 
 function tc {
