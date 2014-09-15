@@ -39,10 +39,14 @@ if [ "$(uname)" == "Darwin" ]; then
         if [ -f $(brew --prefix)/etc/bash_completion ]; then
             . $(brew --prefix)/etc/bash_completion
         fi
+        if [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
+            . $(brew --prefix)/share/bash-completion/bash_completion
+        fi
     } || {
     echo "Brew not installed.."
 }
 fi
+
 ### Added by the Heroku Toolbelt
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
