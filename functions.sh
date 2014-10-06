@@ -340,3 +340,8 @@ function node_test {
 function tunnel {
     ngrok -subdomain=dhilipsiva $1
 }
+
+function tutis {
+    . ~/ENV/tutis/bin/activate
+    cd ~/Projects/tutis/
+}
