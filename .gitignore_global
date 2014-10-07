@@ -41,3 +41,6 @@ Thumbs.db
 *.swp
 *.swo
 *.pyc
+
+db.sqlite3
+bower_components/
