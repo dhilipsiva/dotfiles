@@ -343,5 +343,11 @@ function tunnel {
 
 function tutis {
     . ~/ENV/tutis/bin/activate
-    cd ~/Projects/tutis/
+    cd ~/Projects/tutis
+}
+
+function tutisf {
+    # Tutis Frontend
+    . ~/ENV/tutisf/bin/activate
+    cd ~/Projects/tutis/frontend
 }
