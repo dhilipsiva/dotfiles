@@ -349,5 +349,5 @@ function tutis {
 function tutisf {
     # Tutis Frontend
     . ~/ENV/tutisf/bin/activate
-    cd ~/Projects/tutis/frontend
+    cd ~/Projects/tutis-frontend
 }
