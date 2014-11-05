@@ -341,13 +341,7 @@ function tunnel {
     ngrok -subdomain=dhilipsiva $1
 }
 
-function tutis {
-    . ~/ENV/tutis/bin/activate
-    cd ~/Projects/tutis
-}
-
-function tutisf {
-    # Tutis Frontend
-    . ~/ENV/tutisf/bin/activate
-    cd ~/Projects/tutis-frontend
+function fabkins {
+    . ~/ENV/fabkins/bin/activate
+    cd ~/Projects/fabkins
 }
