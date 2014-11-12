@@ -94,3 +94,6 @@
 [submodule ".vim/bundle/ember-script"]
 	path = .vim/bundle/ember-script
 	url = git@github.com:heartsentwined/vim-ember-script.git
+[submodule ".vim/bundle/less"]
+	path = .vim/bundle/less
+	url = git@github.com:groenewege/vim-less.git
