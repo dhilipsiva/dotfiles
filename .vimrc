@@ -6,7 +6,7 @@ set ignorecase      "ignore case while searching
 set smartcase       "if camel-cased, dont ignore case
 set incsearch       "instant search
 set nocompatible    "non compatibe
-set hlsearch        "Highlight the search termset wildignore=*.swp,*.bak,*.pyc,*.claset
+set hlsearch        "Highlight the search term
 
 execute pathogen#infect()
 call pathogen#helptags()
@@ -69,3 +69,6 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,.git/*,node_modules
 au BufNewFile,BufRead *.py,*js set colorcolumn=80
 
 autocmd BufNewFile,BufRead *.cap   set syntax=ruby
+
+set backupdir=~/.vim/_backup//
+set directory=~/.vim/_tmp//
