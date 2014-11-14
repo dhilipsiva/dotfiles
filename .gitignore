@@ -1,2 +1,4 @@
 *.swp
 .DS_Store
+.vim/_backup/*
+.vim/_tmp/*
