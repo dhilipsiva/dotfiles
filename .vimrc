@@ -64,7 +64,7 @@ augroup END
 " Some people just dont follow pep-8 strongly. This setting for for when I edit those stupid code
 " let g:flake8_ignore="W291,W293,E127,E128,E201,E202,E203,E121,E122,E126,E225,E251,E261,E301,E302,E303,E501,E711"
 
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,.git/*,node_modules
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,.git/*,*/node_modules*/,*/bower_components/*
 
 au BufNewFile,BufRead *.py,*js set colorcolumn=80
 

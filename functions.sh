@@ -37,7 +37,10 @@ function search {
         --exclude=\*.{pyc,swp,un~,png,jpg} \
         --exclude-dir=".git" \
         --exclude-dir="node_modules" \
+        --exclude-dir="bower_components" \
+        --exclude-dir="dist" \
         --exclude-dir="tmp" \
+        --exclude-dir=".sass_cache" \
         --color "$*" .
 }
 
