@@ -97,3 +97,6 @@
 [submodule ".vim/bundle/less"]
 	path = .vim/bundle/less
 	url = git@github.com:groenewege/vim-less.git
+[submodule ".vim/bundle/rust"]
+	path = .vim/bundle/rust
+	url = git@github.com:wting/rust.vim.git
