@@ -230,7 +230,7 @@ defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Desk
 
 # Show icons for hard drives, servers, and removable media on the desktop
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
-defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
+defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
 defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
@@ -338,7 +338,7 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 defaults write com.apple.dock mouse-over-hilite-stack -bool true
 
 # Set the icon size of Dock items to 36 pixels
-defaults write com.apple.dock tilesize -int 3of42dba103d8ff88399dceb77a3f7a3d9cdb359c8
+defaults write com.apple.dock tilesize -int 36
 
 # Change minimize/maximize window effect
 defaults write com.apple.dock mineffect -string "scale"
