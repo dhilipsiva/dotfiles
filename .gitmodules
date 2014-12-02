@@ -100,3 +100,6 @@
 [submodule ".vim/bundle/rust"]
 	path = .vim/bundle/rust
 	url = git@github.com:wting/rust.vim.git
+[submodule ".vim/bundle/protobuf"]
+	path = .vim/bundle/protobuf
+	url = git@github.com:uarun/vim-protobuf.git
