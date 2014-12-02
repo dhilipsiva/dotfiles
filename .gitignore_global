@@ -44,3 +44,5 @@ Thumbs.db
 
 db.sqlite3
 bower_components/
+.vagrant/
+node_modules/
