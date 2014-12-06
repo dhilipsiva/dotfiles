@@ -348,3 +348,8 @@ function fabkins {
     . ~/ENV/fabkins/bin/activate
     cd ~/Projects/fabkins
 }
+
+function storage {
+    . ~/ENV/file_storage/bin/activate
+    cd ~/Projects/file_storage
+}
