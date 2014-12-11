@@ -103,3 +103,6 @@
 [submodule ".vim/bundle/protobuf"]
 	path = .vim/bundle/protobuf
 	url = git@github.com:uarun/vim-protobuf.git
+[submodule ".vim/bundle/nginx"]
+	path = .vim/bundle/nginx
+	url = git@github.com:evanmiller/nginx-vim-syntax.git
