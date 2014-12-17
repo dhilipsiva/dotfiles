@@ -12,7 +12,6 @@ alias h="history"
 alias p="python"
 alias d='d'
 alias q="exit"
-alias ds="./manage.py shell" # Django Shell
 alias t="date"
 alias r="rails"
 alias e="ember"
@@ -25,13 +24,13 @@ else # OS X `ls`
 fi
 
 # List all files colorized in long format
-alias l="ls -lF ${colorflag}"
+alias l="ls -F ${colorflag}"
 
 # List all files colorized in long format, including dot files
-alias la="ls -laF ${colorflag}"
+alias la="ls -aF ${colorflag}"
 
 # List only directories
-alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
+alias lsd="ls -F ${colorflag} | grep --color=never '^d'"
 
 # Always use color output for `ls`
 alias ls="command ls ${colorflag}"
