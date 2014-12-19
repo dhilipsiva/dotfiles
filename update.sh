@@ -16,6 +16,7 @@ if [ "$(uname)" == "Darwin" ]; then
         brew cleanup
         brew prune
         brew cask update
+        brew cask cleanup
     } || {
     echo "$BOLD $GREEN Brew is not installed $RESET"
 }
