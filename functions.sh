@@ -353,3 +353,13 @@ function storage {
     . ~/ENV/file_storage/bin/activate
     cd ~/Projects/file_storage
 }
+
+function testf {
+    . ~/ENV/testf/bin/activate
+    cd Projects/testf
+}
+
+function watchmen {
+    . ~/ENV/watchmen/bin/activate
+    cd Projects/watchmen
+}
