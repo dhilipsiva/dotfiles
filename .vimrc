@@ -72,3 +72,5 @@ autocmd BufNewFile,BufRead *.cap   set syntax=ruby
 
 set backupdir=~/.vim/_backup//
 set directory=~/.vim/_tmp//
+
+let g:templates_directory = '~/.vim/templates'
