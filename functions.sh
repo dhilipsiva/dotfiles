@@ -363,3 +363,8 @@ function watchmen {
     . ~/ENV/watchmen/bin/activate
     cd Projects/watchmen
 }
+
+function websockify {
+    . ~/ENV/appknox/websockify/bin/activate
+    cd Projects/appknox/websokify
+}
