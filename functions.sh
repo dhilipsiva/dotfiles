@@ -368,3 +368,8 @@ function websockify {
     . ~/ENV/appknox/websockify/bin/activate
     cd Projects/appknox/websokify
 }
+
+function junction {
+    . ~/ENV/junction/bin/activate
+    cd Projects/junction
+}
