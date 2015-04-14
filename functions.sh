@@ -41,6 +41,8 @@ function search {
         --exclude-dir="dist" \
         --exclude-dir="tmp" \
         --exclude-dir=".sass_cache" \
+        --exclude-dir="Appknox" \
+        --exclude-dir="build" \
         --color "$*" .
 }
 
