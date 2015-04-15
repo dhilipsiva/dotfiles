@@ -109,3 +109,6 @@
 [submodule ".vim/bundle/smali"]
 	path = .vim/bundle/smali
 	url = git@github.com:kelwin/vim-smali.git
+[submodule ".vim/bundle/kivy"]
+	path = .vim/bundle/kivy
+	url = git@github.com:farfanoide/vim-kivy.git
