@@ -58,3 +58,14 @@ source '/Users/dhilipsiva/google-cloud-sdk/path.bash.inc'
 
 # The next line enables bash completion for gcloud.
 source '/Users/dhilipsiva/google-cloud-sdk/completion.bash.inc'
+
+# A `faric` auto completion utility
+_fab()
+{
+    local cur
+    COMPREPLY=()
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    local tags=$(fab -l 2>/dev/null | grep "^    " | awk '{print $1;}')
+    COMPREPLY=($(compgen -W "${tags}" $cur))
+}
+complete -F _fab fab
