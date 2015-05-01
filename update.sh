@@ -11,8 +11,8 @@ set -e
 if [ "$(uname)" == "Darwin" ]; then
     # Update brew stuff
     {
-        brew update
-        brew upgrade
+        brew update --all
+        brew upgrade --all
         brew cleanup
         brew prune
         brew cask update
