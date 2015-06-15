@@ -370,3 +370,8 @@ function junction {
     . ~/ENV/junction/bin/activate
     cd Projects/junction
 }
+
+function dhilipsiva {
+    . ~/ENV/dhilipsiva/bin/activate
+    cd Projects/dhilipsiva
+}
