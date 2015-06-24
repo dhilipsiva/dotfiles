@@ -75,3 +75,5 @@ set backupdir=~/.vim/_backup//
 set directory=~/.vim/_tmp//
 
 let g:templates_directory = '~/.vim/templates'
+
+au BufNewFile,BufReadPost *.emblem,*.haml,*.py,*.coffee,*.jade set foldmethod=indent
