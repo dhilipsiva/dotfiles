@@ -112,3 +112,6 @@
 [submodule ".vim/bundle/kivy"]
 	path = .vim/bundle/kivy
 	url = git@github.com:farfanoide/vim-kivy.git
+[submodule ".vim/bundle/carthage"]
+	path = .vim/bundle/carthage
+	url = git@github.com:cfdrake/vim-carthage.git
