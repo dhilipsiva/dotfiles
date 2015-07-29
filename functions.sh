@@ -353,25 +353,30 @@ function storage {
 
 function testf {
     . ~/ENV/testf/bin/activate
-    cd Projects/testf
+    cd ~/Projects/testf
 }
 
 function watchmen {
     . ~/ENV/watchmen/bin/activate
-    cd Projects/watchmen
+    cd ~/Projects/watchmen
 }
 
 function websockify {
     . ~/ENV/appknox/websockify/bin/activate
-    cd Projects/appknox/websokify
+    cd ~/Projects/appknox/websokify
 }
 
 function junction {
     . ~/ENV/junction/bin/activate
-    cd Projects/junction
+    cd ~/Projects/junction
 }
 
 function dhilipsiva {
     . ~/ENV/dhilipsiva/bin/activate
-    cd Projects/dhilipsiva
+    cd ~/Projects/dhilipsiva
+}
+
+function ember-cli-payments {
+    . ~/ENV/ember-cli-payments/bin/activate
+    cd ~/Projects/ember-cli-payments
 }
