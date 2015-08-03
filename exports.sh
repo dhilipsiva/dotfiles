@@ -71,7 +71,7 @@ export BOLD
 export RESET
 
 if [ "$(uname)" == "Darwin" ]; then
-    export PS1=' \[${BOLD}${MAGENTA}\]\W\[$RESET\] 🙌  '
+    export PS1=' \[${BOLD}${MAGENTA}\]\W\[$RESET\] \n 🙌  '
 else
     export PS1=' \[${BOLD}${MAGENTA}\]\W \[$GREEN\]->\[$RESET\] '
 fi

@@ -380,3 +380,8 @@ function ember-cli-payments {
     . ~/ENV/ember-cli-payments/bin/activate
     cd ~/Projects/ember-cli-payments
 }
+
+function sortie {
+    . ~/ENV/sortie/bin/activate
+    cd ~/Projects/appknox/sortie
+}

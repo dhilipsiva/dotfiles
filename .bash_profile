@@ -69,3 +69,7 @@ _fab()
     COMPREPLY=($(compgen -W "${tags}" $cur))
 }
 complete -F _fab fab
+
+if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
+    source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
+fi
