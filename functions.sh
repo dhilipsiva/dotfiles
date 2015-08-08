@@ -385,3 +385,8 @@ function sortie {
     . ~/ENV/sortie/bin/activate
     cd ~/Projects/appknox/sortie
 }
+
+function appknox-python {
+    . ~/ENV/appknox/appknox-python/bin/activate
+    cd ~/Projects/appknox/appknox-python
+}
