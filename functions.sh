@@ -390,3 +390,8 @@ function appknox-python {
     . ~/ENV/appknox/appknox-python/bin/activate
     cd ~/Projects/appknox/appknox-python
 }
+
+function appknox.github.io {
+    . ~/ENV/appknox/appknox.github.io/bin/activate
+    cd ~/Projects/appknox/appknox.github.io
+}
