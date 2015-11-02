@@ -73,3 +73,6 @@ complete -F _fab fab
 if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
     source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
 fi
+
+complete -o bashdefault -o default -o nospace -F _git g 2>/dev/null \
+    || complete -o default -o nospace -F _git g
