@@ -76,3 +76,13 @@ fi
 
 complete -o bashdefault -o default -o nospace -F _git g 2>/dev/null \
     || complete -o default -o nospace -F _git g
+
+# ==================================================================================================
+# Everyting below is for building android
+function mountAndroid { hdiutil attach ~/android.dmg.sparseimage -mountpoint /Volumes/android; }
+function umountAndroid() { hdiutil detach /Volumes/android; }
+
+export USE_CCACHE=1
+export CCACHE_DIR=~/Desktop/cache
+export PATH=~/bin:$PATH
+# ==================================================================================================
