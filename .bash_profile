@@ -2,6 +2,7 @@
 for file in ~/{exports,aliases,functions,private}.sh; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
+
 unset file
 
 # Case-insensitive globbing (used in pathname expansion)
@@ -42,6 +43,9 @@ if [ "$(uname)" == "Darwin" ]; then
         if [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
             . $(brew --prefix)/share/bash-completion/bash_completion
         fi
+		if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
+    		source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
+		fi
     } || {
     echo "Brew not installed.."
 }
@@ -54,10 +58,14 @@ fi
 complete -C aws_completer aws
 
 # The next line updates PATH for the Google Cloud SDK.
-source '/Users/dhilipsiva/google-cloud-sdk/path.bash.inc'
+if [ -f "~/google-cloud-sdk/path.bash.inc" ]; then
+	source '~/google-cloud-sdk/path.bash.inc'
+fi
 
 # The next line enables bash completion for gcloud.
-source '/Users/dhilipsiva/google-cloud-sdk/completion.bash.inc'
+if [ -f "~/google-cloud-sdk/completion.bash.inc" ]; then
+	source '~/google-cloud-sdk/completion.bash.inc'
+fi
 
 # A `faric` auto completion utility
 _fab()
@@ -70,19 +78,5 @@ _fab()
 }
 complete -F _fab fab
 
-if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
-    source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
-fi
-
 complete -o bashdefault -o default -o nospace -F _git g 2>/dev/null \
     || complete -o default -o nospace -F _git g
-
-# ==================================================================================================
-# Everyting below is for building android
-function mountAndroid { hdiutil attach ~/android.dmg.sparseimage -mountpoint /Volumes/android; }
-function umountAndroid() { hdiutil detach /Volumes/android; }
-
-export USE_CCACHE=1
-export CCACHE_DIR=~/Desktop/cache
-export PATH=~/bin:$PATH
-# ==================================================================================================

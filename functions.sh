@@ -43,6 +43,7 @@ function search {
         --exclude-dir=".sass_cache" \
         --exclude-dir="Appknox" \
         --exclude-dir="build" \
+        --exclude-dir="uploads" \
         --color "$*" .
 }
 
