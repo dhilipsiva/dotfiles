@@ -8,13 +8,8 @@
 
 """
 File name: %FFILE%
-Version: 0.1
 Author: %USER% <%MAIL%>
 Date created: %DATE%
 """
-__author__ = "%USER%"
-__status__ = "development"
 
-"""
-%HERE%
-"""
+from%HERE%
