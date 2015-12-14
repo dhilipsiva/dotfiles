@@ -396,3 +396,8 @@ function appknox.github.io {
     . ~/ENV/appknox/appknox.github.io/bin/activate
     cd ~/Projects/appknox/appknox.github.io
 }
+
+function nomnom {
+    . ~/ENV/nomnom/bin/activate
+    cd ~/Projects/nomnom
+}
