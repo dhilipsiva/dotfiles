@@ -18,4 +18,10 @@ mkdir -p ~/Projects
 rm -rf ~/Projects/dotfiles
 git clone --recursive git@github.com:dhilipsiva/dotfiles.git ~/Projects/dotfiles
 cd ~/Projects/dotfiles
+
+echo "Installing Auto updater"
+mkdir -p ~/Library/LaunchAgents
+cp com.dhilipsiva.dependencies_updater.plist ~/Library/LaunchAgents/
+echo "installing com.dhilipsiva.dependencies_updater.plist..."
+launchctl load -w ~/Library/LaunchAgents/com.dhilipsiva.dependencies_updater.plist
 ./copy.sh
