@@ -93,3 +93,7 @@ export PATH=$PATH:$GOPATH
 export SHELL=/usr/local/bin/bash
 
 export PATH=/opt/local/bin:$PATH
+
+export LDFLAGS=-L/usr/local/opt/libffi/lib:$LDFLAGS
+export LDFLAGS=-L/usr/local/opt/openssl/lib:$LDFLAGS
+export CPPFLAGS=-I/usr/local/opt/openssl/include
