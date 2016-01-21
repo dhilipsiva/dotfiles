@@ -362,7 +362,7 @@ function watchmen {
     cd ~/Projects/watchmen
 }
 
-function websockify {
+function websockify1 {
     . ~/ENV/appknox/websockify/bin/activate
     cd ~/Projects/appknox/websokify
 }
