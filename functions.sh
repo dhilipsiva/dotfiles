@@ -401,3 +401,10 @@ function nomnom {
     . ~/ENV/nomnom/bin/activate
     cd ~/Projects/nomnom
 }
+
+function start_docker() {
+	docker-machine start default
+	eval $(docker-machine env default)
+	echo "The containers:"
+	docker ps
+}
