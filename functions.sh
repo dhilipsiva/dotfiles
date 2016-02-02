@@ -408,3 +408,10 @@ function start_docker() {
 	echo "The containers:"
 	docker ps
 }
+
+function clean_docker() {
+	# Delete all containers
+	docker rm $(docker ps -a -q)
+	# Delete all images
+	docker rmi $(docker images -q)
+}
