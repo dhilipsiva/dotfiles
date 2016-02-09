@@ -415,3 +415,11 @@ function clean_docker() {
 	# Delete all images
 	docker rmi $(docker images -q)
 }
+
+
+function let_me_in {
+    . ~/ENV/appknox/let_me_in/bin/activate
+    cd ~/Projects/appknox/let_me_in
+}
+
+

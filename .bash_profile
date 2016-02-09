@@ -80,3 +80,7 @@ complete -F _fab fab
 
 complete -o bashdefault -o default -o nospace -F _git g 2>/dev/null \
     || complete -o default -o nospace -F _git g
+
+complete -F _docker d
+
+complete -F _docker-machine dm

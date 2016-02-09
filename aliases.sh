@@ -10,11 +10,12 @@ alias p="cd ~/projects"
 alias g="git"
 alias h="history"
 alias p="python"
-alias d='d'
 alias q="exit"
 alias t="date"
 alias r="rails"
 alias e="ember"
+alias d="docker"
+alias dm="docker-machine"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
