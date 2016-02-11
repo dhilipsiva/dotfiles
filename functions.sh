@@ -421,5 +421,3 @@ function let_me_in {
     . ~/ENV/appknox/let_me_in/bin/activate
     cd ~/Projects/appknox/let_me_in
 }
-
-

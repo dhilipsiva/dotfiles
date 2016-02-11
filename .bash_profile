@@ -84,3 +84,5 @@ complete -o bashdefault -o default -o nospace -F _git g 2>/dev/null \
 complete -F _docker d
 
 complete -F _docker-machine dm
+
+complete -F _docker-compose dc

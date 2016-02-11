@@ -16,6 +16,7 @@ alias r="rails"
 alias e="ember"
 alias d="docker"
 alias dm="docker-machine"
+alias dc="docker-compose"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
