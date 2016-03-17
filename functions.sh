@@ -426,3 +426,8 @@ function stupid-sockets {
     . ~/ENV/appknox/stupid-sockets/bin/activate
     cd ~/Projects/appknox/stupid-sockets
 }
+
+function test3 {
+    . ~/ENV/test3/bin/activate
+    cd ~/Projects/test/test3
+}
