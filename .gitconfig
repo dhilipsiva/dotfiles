@@ -150,11 +150,7 @@
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f
 	required = true
-[http "https://git.vry6.flynnhub.com"]
-	sslCAInfo = /Users/dhilipsiva/.flynn/ca-certs/flynn-1453790863.pem
-[credential "https://git.vry6.flynnhub.com"]
-	helper = /usr/local/bin/flynn git-credentials
-[http "https://git.5dxq.flynnhub.com"]
-	sslCAInfo = /Users/dhilipsiva/.flynn/ca-certs/flynn-1455783668.pem
-[credential "https://git.5dxq.flynnhub.com"]
+[http "https://git.yegj.flynnhub.com"]
+	sslCAInfo = /Users/dhilipsiva/.flynn/ca-certs/flynn-1458301815.pem
+[credential "https://git.yegj.flynnhub.com"]
 	helper = /usr/local/bin/flynn git-credentials
