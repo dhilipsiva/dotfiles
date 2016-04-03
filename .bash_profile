@@ -57,16 +57,6 @@ fi
 
 complete -C aws_completer aws
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f "~/google-cloud-sdk/path.bash.inc" ]; then
-	source '~/google-cloud-sdk/path.bash.inc'
-fi
-
-# The next line enables bash completion for gcloud.
-if [ -f "~/google-cloud-sdk/completion.bash.inc" ]; then
-	source '~/google-cloud-sdk/completion.bash.inc'
-fi
-
 # A `faric` auto completion utility
 _fab()
 {
