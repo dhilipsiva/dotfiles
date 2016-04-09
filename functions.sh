@@ -428,6 +428,6 @@ function stupid-sockets {
 }
 
 function test3 {
-    . ~/ENV/test3/bin/activate
-    cd ~/Projects/test/test3
+    . ~/ENV/personal/test3/bin/activate
+    cd ~/Projects/personal/test
 }
