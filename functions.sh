@@ -339,8 +339,8 @@ function style {
 }
 
 function node_test {
-    . ~/ENV/node_test/bin/activate
-    cd ~/Projects/node_test/
+    . ~/ENV/personal/node_test/bin/activate
+    cd ~/Projects/personal/node_test/
 }
 
 function tunnel {
@@ -431,3 +431,21 @@ function test3 {
     . ~/ENV/personal/test3/bin/activate
     cd ~/Projects/personal/test
 }
+
+function mailpile-client {
+    electron-open http://localhost:33411/ &
+}
+
+function mailpile {
+    [ -e "$HOME/Library/Application Support/Mailpile/osx.pwd" ] \
+        && cd $(cat "$HOME/Library/Application Support/Mailpile/osx.pwd")
+    export MAILPILE_BREW_ROOT="$(pwd)/Mailpile-Brew"
+    export MAILPILE_ROOT="$(pwd)/Mailpile"
+    export PATH="$MAILPILE_BREW_ROOT/bin:/usr/bin:/bin"
+    export PYTHONHOME="$MAILPILE_BREW_ROOT/Cellar/python/2.7.8/Frameworks/Python.framework/Versions/2.7/"
+    export OPENSSL_CONF="$MAILPILE_BREW_ROOT/etc/openssl/openssl.cnf"
+    echo $MAILPILE_ROOT
+    cd "$MAILPILE_ROOT"
+    ./mp --www= --interact
+}
+
