@@ -449,3 +449,16 @@ function mailpile {
     ./mp --www= --interact
 }
 
+function pull_from_device() {
+	OP=`adb shell pm path $1 | sed -e "s/package://g"`
+	echo "PATH:"
+	echo $OP
+	echo "type the folowwing command to get apk:"
+	echo "adb pull <PATH> && mv *.apk ~/Downloads/ && open ~/Downloads/"
+}
+
+function apk_download() {
+	adb shell am start -a android.intent.action.VIEW -d "market://details?id=$1"
+	echo "once you install the app on your device enter the following command again:"
+	echo "pull_from_device $1"
+}
