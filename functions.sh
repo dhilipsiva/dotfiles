@@ -462,3 +462,7 @@ function apk_download() {
 	echo "once you install the app on your device enter the following command again:"
 	echo "pull_from_device $1"
 }
+
+function fab-env() {
+    . ~/ENV/fab-env/bin/activate
+}
