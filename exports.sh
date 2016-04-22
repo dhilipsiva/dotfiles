@@ -12,6 +12,7 @@ export LC_TIME="en_US.UTF-8"
 
 # Make vim the default editor
 export EDITOR="vim"
+export SHELL=/usr/local/bin/bash
 
 # Larger bash history (allow 32³ entries; default is 500)
 export HISTSIZE=32768
@@ -90,7 +91,6 @@ export ANDROID_HOME=/usr/local/opt/android-sdk
 export FIGNORE=$FIGNORE:.hi:.pyc:.o:.swp
 export GOPATH=/usr/local/opt/go/libexec/bin
 export PATH=$PATH:$GOPATH
-export SHELL=/usr/local/bin/bash
 
 export PATH=/opt/local/bin:$PATH
 

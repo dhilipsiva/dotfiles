@@ -1,0 +1,11 @@
+name: moriarty
+root: ~/Projects/appknox/moriarty
+pre_window: moriarty
+windows:
+  - main:
+      layout: 8480,177x45,0,0[178x22,0,0{88x22,0,0,2,89x22,89,0,8},178x23,0,23{88x23,0,23,9,89x23,89,23,10}]
+      panes:
+        - runserver: ./manage.py runserver
+        - websockify: ./manage.py websockify
+        - devices: ./manage.py devices
+        - commands: git status
