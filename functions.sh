@@ -466,3 +466,8 @@ function apk_download() {
 function fab-env() {
     . ~/ENV/fab-env/bin/activate
 }
+
+function playconda() {
+    . ~/ENV/others/playconda/bin/activate
+	cd ~/Projects/others/playconda
+}
