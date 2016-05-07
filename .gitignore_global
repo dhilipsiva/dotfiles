@@ -43,6 +43,5 @@ Thumbs.db
 *.pyc
 
 db.sqlite3
-bower_components/
 .vagrant/
 node_modules/

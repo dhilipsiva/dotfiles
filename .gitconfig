@@ -154,3 +154,11 @@
 	sslCAInfo = /Users/dhilipsiva/.flynn/ca-certs/flynn-1458301815.pem
 [credential "https://git.yegj.flynnhub.com"]
 	helper = /usr/local/bin/flynn git-credentials
+[http "https://git.kr31.flynnhub.com"]
+	sslCAInfo = /Users/dhilipsiva/.flynn/ca-certs/flynn-1462570575.pem
+[credential "https://git.kr31.flynnhub.com"]
+	helper = /usr/local/bin/flynn git-credentials
+[http "https://git.r3w5.flynnhub.com"]
+	sslCAInfo = /Users/dhilipsiva/.flynn/ca-certs/flynn-1462598803.pem
+[credential "https://git.r3w5.flynnhub.com"]
+	helper = /usr/local/bin/flynn git-credentials
