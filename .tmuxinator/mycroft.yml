@@ -1,8 +1,8 @@
 # ~/.tmuxinator/moriarty.yml
 
-name: moriarty
-root: ~/Projects/appknox/moriarty
-pre_window: moriarty
+name: mycroft
+root: ~/Projects/appknox/mycroft
+pre_window: mycroft
 
 windows:
   - main:

@@ -1,0 +1,12 @@
+# ~/.tmuxinator/moriarty.yml
+
+name: irene
+root: ~/Projects/appknox/irene
+pre_window: irene
+
+windows:
+  - main:
+      layout: main-vertical
+      panes:
+        - serve: ember serve
+        - command: git status

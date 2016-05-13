@@ -1,8 +1,8 @@
-# ~/.tmuxinator/moriarty.yml
+# ~/.tmuxinator/sherlock.yml
 
-name: moriarty
-root: ~/Projects/appknox/moriarty
-pre_window: moriarty
+name: sherlock
+root: ~/Projects/appknox/sherlock
+pre_window: sherlock
 
 windows:
   - main:
