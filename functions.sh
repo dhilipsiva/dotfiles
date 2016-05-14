@@ -6,14 +6,6 @@ function parse_git_branch() {
     git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
 }
 
-function m {
-    if [[ $1 = "" ]]; then
-        mvim .
-    else
-        mvim $*
-    fi
-}
-
 function rs {
     if [[ $1 = "" ]]; then
         ./manage.py runserver 0.0.0.0:8000
