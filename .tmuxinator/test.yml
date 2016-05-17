@@ -1,6 +1,7 @@
 # ~/.tmuxinator/test.yml
 
 name: test
+tmux_options: -f ~/.tmux.conf
 root: ~/
 
 # Optional tmux socket

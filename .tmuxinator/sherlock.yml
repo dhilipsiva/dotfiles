@@ -2,6 +2,7 @@
 
 name: sherlock
 root: ~/Projects/appknox/sherlock
+tmux_options: -f ~/.tmux.conf
 pre_window: sherlock
 
 windows:

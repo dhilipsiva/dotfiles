@@ -2,6 +2,7 @@
 
 name: mycroft
 root: ~/Projects/appknox/mycroft
+tmux_options: -f ~/.tmux.conf
 pre_window: mycroft
 
 windows:

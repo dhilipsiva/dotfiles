@@ -2,6 +2,7 @@
 
 name: irene
 root: ~/Projects/appknox/irene
+tmux_options: -f ~/.tmux.conf
 pre_window: irene
 
 windows:

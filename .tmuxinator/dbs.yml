@@ -1,6 +1,6 @@
 name: dbs
 root: ~/
-tmux_options: -f ~/tmux.conf
+tmux_options: -f ~/.tmux.conf
 windows:
   - services:
       layout: 487a,178x46,0,0{89x46,0,0[89x23,0,0,1,89x22,0,24,4],88x46,90,0[88x23,90,0,2,88x22,90,24,5]}

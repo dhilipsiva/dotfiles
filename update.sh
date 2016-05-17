@@ -24,7 +24,7 @@ fi
 
 # Copy the required files to `dotfiles`
 cd ~/Projects/dotfiles
-cp -f ~/{.bash_profile,.gitignore_global,.gitconfig,.vimrc,Brewfile,Caskfile,aliases.sh,exports.sh,functions.sh,update.sh,.osx,tmux.conf} .
+cp -f ~/{.bash_profile,.gitignore_global,.gitconfig,.vimrc,Brewfile,Caskfile,aliases.sh,exports.sh,functions.sh,update.sh,.osx,.tmux.conf} .
 cp -f ~/.vim/templates/* .vim/templates/
 cp -f ~/.tmuxinator/* .tmuxinator/
 git add -A .

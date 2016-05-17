@@ -2,6 +2,7 @@
 
 name: moriarty
 root: ~/Projects/appknox/moriarty
+tmux_options: -f ~/.tmux.conf
 pre_window: moriarty
 
 windows:
