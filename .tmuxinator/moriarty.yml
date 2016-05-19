@@ -11,5 +11,5 @@ windows:
       panes:
         - runserver: ./manage.py runserver 0.0.0.0:8888
         - celery: ./manage.py devices
-        - somearea: git status
+        - somearea: ./manage.py websockify
         - commands: git status
