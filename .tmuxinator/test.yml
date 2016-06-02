@@ -29,10 +29,10 @@ root: ~/
 # post: tmux -CC attach -t test
 
 windows:
-  - editor:
+  - test-editor:
       layout: main-vertical
       panes:
         - vim
         - guard
-  - server: bundle exec rails s
-  - logs: tail -f log/development.log
+  - test-server: bundle exec rails s
+  - test-logs: tail -f log/development.log

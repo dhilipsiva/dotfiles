@@ -1,0 +1,12 @@
+# ~/.tmuxinator/moriarty.yml
+
+name: appknox
+root: ~
+tmux_options: -f ~/.tmux.conf
+
+windows:
+  - dbs: mux dbs
+  - mycroft: mux mycroft
+  - slerlock: mux sherlock
+  - irene: mux irene
+  - moriarty: mux moriarty

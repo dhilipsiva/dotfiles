@@ -6,7 +6,7 @@ tmux_options: -f ~/.tmux.conf
 pre_window: moriarty
 
 windows:
-  - main:
+  - moriarty:
       layout: 487a,178x46,0,0{89x46,0,0[89x23,0,0,1,89x22,0,24,4],88x46,90,0[88x23,90,0,2,88x22,90,24,5]}
       panes:
         - runserver: ./manage.py runserver 0.0.0.0:8888

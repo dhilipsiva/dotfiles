@@ -6,8 +6,8 @@ tmux_options: -f ~/.tmux.conf
 pre_window: irene
 
 windows:
-  - main:
-      layout: main-vertical
+  - irene:
+      layout: 8635,238x55,0,0{119x55,0,0,12,118x55,120,0,18}
       panes:
         - serve: ember serve
         - command: git status
