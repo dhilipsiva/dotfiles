@@ -463,3 +463,8 @@ function playconda() {
     . ~/ENV/others/playconda/bin/activate
 	cd ~/Projects/others/playconda
 }
+
+function pwdman-env() {
+    . ~/ENV/personal/pwdman/bin/activate
+	cd ~/Projects/personal/pwdman
+}
