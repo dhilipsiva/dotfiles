@@ -40,7 +40,7 @@ filetype plugin indent on
 "post Pathogen functions
 colorscheme ansi_blows
 if has("gui_running")
-    set guifont=Monaco:h12     "favorite font
+    set guifont=Monaco:h12    "favorite font
     set guioptions-=m           "remove menu bar
     set guioptions-=T           "remove toolbar
     set guioptions-=r           "remove right-hand scroll bar
