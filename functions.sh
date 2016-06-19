@@ -468,3 +468,8 @@ function pwdman-env() {
     . ~/ENV/personal/pwdman/bin/activate
 	cd ~/Projects/personal/pwdman
 }
+
+function pymobiledevice() {
+    . ~/ENV/appknox/pymobiledevice/bin/activate
+	cd ~/Projects/appknox/pymobiledevice
+}
