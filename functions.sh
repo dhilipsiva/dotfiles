@@ -473,3 +473,14 @@ function pymobiledevice() {
     . ~/ENV/appknox/pymobiledevice/bin/activate
 	cd ~/Projects/appknox/pymobiledevice
 }
+
+
+function frida-runner-env() {
+    . ~/ENV/appknox/frida-runner/bin/activate
+	cd ~/Projects/appknox/frida-runner
+}
+
+function scrum-env() {
+    . ~/ENV/personal/scrum/bin/activate
+	cd ~/Projects/personal/scrum
+}
