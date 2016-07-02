@@ -16,11 +16,6 @@ let g:gitgutter_enabled = 0                 "Disable GitGutter by default
 let g:email = "dhilipsiva@gmail.com"
 let g:username = "dhilipsiva"
 
-set tabstop=4
-set shiftwidth=4
-au BufNewFile,BufReadPost *.coffee,*.rb,*.yml,*.yaml,*.js,*.jade setl tabstop=2 shiftwidth=2
-
-set expandtab
 
 filetype on
 autocmd BufWritePost *.py call Flake8() "apply flake8 as files are saved
@@ -79,3 +74,8 @@ let g:templates_directory = '~/.vim/templates'
 au BufNewFile,BufReadPost *.emblem,*.haml,*.py,*.coffee,*.jade set foldmethod=indent
 
 let g:vim_markdown_conceal = 0
+
+set tabstop=4
+set shiftwidth=4
+au BufNewFile,BufReadPost *.coffee,*.rb,*.yml,*.yaml,*.js,*.jade setl tabstop=2 shiftwidth=2
+set expandtab
