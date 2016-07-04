@@ -77,5 +77,5 @@ let g:vim_markdown_conceal = 0
 
 set tabstop=4
 set shiftwidth=4
-au BufNewFile,BufReadPost *.coffee,*.rb,*.yml,*.yaml,*.js,*.jade setl tabstop=2 shiftwidth=2
 set expandtab
+au BufNewFile,BufReadPost *.coffee,*.rb,*.yml,*.yaml,*.js,*.jade setl tabstop=2 shiftwidth=2 expandtab
