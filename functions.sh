@@ -484,3 +484,8 @@ function scrum-env() {
     . ~/ENV/personal/scrum/bin/activate
 	cd ~/Projects/personal/scrum
 }
+
+function djoker() {
+    . ~/ENV/personal/djoker/bin/activate
+	cd ~/Projects/personal/djoker
+}
