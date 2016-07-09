@@ -485,7 +485,10 @@ function scrum-env() {
 	cd ~/Projects/personal/scrum
 }
 
-function djoker() {
-    . ~/ENV/personal/djoker/bin/activate
-	cd ~/Projects/personal/djoker
+function djocker() {
+	docker-machine start djocker
+	eval $(docker-machine env djocker)
+	docker ps
+    . ~/ENV/personal/djocker/bin/activate
+	cd ~/Projects/personal/djocker
 }
