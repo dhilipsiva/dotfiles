@@ -142,3 +142,6 @@
 [submodule ".vim/bundle/gradle"]
 	path = .vim/bundle/gradle
 	url = git@github.com:tfnico/vim-gradle.git
+[submodule ".vim/bundle/autoclose"]
+	path = .vim/bundle/autoclose
+	url = git@github.com:Townk/vim-autoclose.git
