@@ -492,3 +492,8 @@ function djocker() {
     . ~/ENV/personal/djocker/bin/activate
 	cd ~/Projects/personal/djocker
 }
+
+function inquire-env() {
+    . ~/ENV/personal/inquire/bin/activate
+	cd ~/Projects/personal/inquire
+}
