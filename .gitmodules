@@ -145,3 +145,6 @@
 [submodule ".vim/bundle/autoclose"]
 	path = .vim/bundle/autoclose
 	url = git@github.com:Townk/vim-autoclose.git
+[submodule ".vim/bundle/wakatime"]
+	path = .vim/bundle/wakatime
+	url = git@github.com:wakatime/vim-wakatime.git
