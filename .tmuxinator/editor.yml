@@ -2,10 +2,8 @@ name: dbs
 root: ~/
 tmux_options: -f ~/.tmux.conf
 windows:
-  - dbs:
-      layout: 487a,178x46,0,0{89x46,0,0[89x23,0,0,1,89x22,0,24,4],88x46,90,0[88x23,90,0,2,88x22,90,24,5]}
-      panes:
-        - postgres: postgres -D /usr/local/var/postgres
-        - redis: redis-server /usr/local/etc/redis.conf
-        - rabbitmq: rabbitmq-server
-        - minio: minio server ~/Projects/minio
+  - commands: time
+  - mycroft: mycroft && vim .
+  - sherlock: sherlock && vim .
+  - moriarty: moriarty && vim .
+  - irene: irene && vim .
