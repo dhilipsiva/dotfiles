@@ -497,3 +497,8 @@ function inquiry-env() {
     . ~/ENV/personal/inquiry/bin/activate
 	cd ~/Projects/personal/inquiry
 }
+
+function neural-doodle() {
+    . ~/ENV/others/neural-doodle/bin/activate
+	cd ~/Projects/others/neural-doodle
+}
