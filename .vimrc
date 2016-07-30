@@ -21,6 +21,7 @@ filetype on
 autocmd BufWritePost *.py call Flake8() "apply flake8 as files are saved
 autocmd BufWritePre * :%s/\s\+$//e "Trim the line endings
 syntax on
+color dracula
 
 "I hate 'Modifiable is off' warnings. I dont properly understand how am I ending up with that error. This is a quick trick to restore writable state.
 func! ModifiableOff()
@@ -61,7 +62,7 @@ augroup END
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,.git/*,*/node_modules*/,*/bower_components/*
 
-au BufNewFile,BufRead *.* colorcolumn=80
+set colorcolumn=80
 
 autocmd BufNewFile,BufRead *.cap   set syntax=ruby
 
