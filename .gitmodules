@@ -4,9 +4,6 @@
 [submodule ".vim/bundle/coffee-script"]
 	path = .vim/bundle/coffee-script
 	url = git@github.com:kchmck/vim-coffee-script.git
-[submodule ".vim/bundle/colorschemes"]
-	path = .vim/bundle/colorschemes
-	url = git@github.com:flazz/vim-colorschemes.git
 [submodule ".vim/bundle/ctrlp"]
 	path = .vim/bundle/ctrlp
 	url = git@github.com:kien/ctrlp.vim.git
@@ -148,3 +145,6 @@
 [submodule ".vim/bundle/wakatime"]
 	path = .vim/bundle/wakatime
 	url = git@github.com:wakatime/vim-wakatime.git
+[submodule ".vim/bundle/dracula"]
+	path = .vim/bundle/dracula
+	url = git@github.com:dracula/vim.git

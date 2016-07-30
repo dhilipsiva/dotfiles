@@ -33,7 +33,6 @@ endfu
 filetype plugin indent on
 
 "post Pathogen functions
-colorscheme ansi_blows
 if has("gui_running")
     set guifont=Monaco:h12    "favorite font
     set guioptions-=m           "remove menu bar
@@ -62,7 +61,7 @@ augroup END
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,.git/*,*/node_modules*/,*/bower_components/*
 
-au BufNewFile,BufRead *.py,*js set colorcolumn=80
+au BufNewFile,BufRead *.* colorcolumn=80
 
 autocmd BufNewFile,BufRead *.cap   set syntax=ruby
 
