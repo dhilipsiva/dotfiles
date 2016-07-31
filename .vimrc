@@ -38,6 +38,7 @@ if has("gui_running")
     set guioptions-=m           "remove menu bar
     set guioptions-=T           "remove toolbar
     set guioptions-=r           "remove right-hand scroll bar
+	set background=dark
     set fu                      "Goto full screen on mac
 endif
 
