@@ -38,7 +38,6 @@ if has("gui_running")
     set guioptions-=m           "remove menu bar
     set guioptions-=T           "remove toolbar
     set guioptions-=r           "remove right-hand scroll bar
-	set background=dark
     set fu                      "Goto full screen on mac
 endif
 
@@ -79,3 +78,5 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 au BufNewFile,BufReadPost *.coffee,*.rb,*.yml,*.yaml,*.js,*.jade setl tabstop=2 shiftwidth=2 expandtab
+let base16colorspace=256
+colorscheme base16-3024
