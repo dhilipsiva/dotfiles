@@ -502,3 +502,8 @@ function neural-doodle() {
     . ~/ENV/others/neural-doodle/bin/activate
 	cd ~/Projects/others/neural-doodle
 }
+
+function email-template-generator() {
+    . ~/ENV/personal/email-template-generator/bin/activate
+    cd ~/Projects/personal/email-template-generator
+}
