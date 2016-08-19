@@ -36,6 +36,10 @@
 
     sy = !"git pull origin $(git rev-parse --abbrev-ref HEAD) && git push origin $(git rev-parse --abbrev-ref HEAD)"
 
+	# push tags
+	pt = push --tags
+
+
     # Clone a repository including all submodules
     cl = clone --recursive
 
@@ -46,7 +50,7 @@
     ca = !git add -A && git commit -av
 
     # Switch to a branch, creating it if necessary
-    go = checkout -B
+    co = checkout -B
 
     # Show verbose output about tags, branches or remotes
     tags = tag -l
