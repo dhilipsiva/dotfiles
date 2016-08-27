@@ -145,3 +145,6 @@
 [submodule ".vim/bundle/base16"]
 	path = .vim/bundle/base16
 	url = git@github.com:chriskempson/base16-vim.git
+[submodule ".vim/bundle/ember"]
+	path = .vim/bundle/ember
+	url = git@github.com:dsawardekar/ember.vim.git
