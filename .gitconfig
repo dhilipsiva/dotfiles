@@ -151,8 +151,8 @@
 	smudge = git hawser smudge %f
 	required = true
 [filter "lfs"]
-	clean = git lfs clean %f
-	smudge = git lfs smudge %f
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
 	required = true
 [http "https://git.yegj.flynnhub.com"]
 	sslCAInfo = /Users/dhilipsiva/.flynn/ca-certs/flynn-1458301815.pem
