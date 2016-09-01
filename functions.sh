@@ -32,7 +32,7 @@ function search {
         --exclude-dir="bower_components" \
         --exclude-dir="dist" \
         --exclude-dir="tmp" \
-        --exclude-dir=".sass_cache" \
+        --exclude-dir=".sass-cache" \
         --exclude-dir="Appknox" \
         --exclude-dir="build" \
         --exclude-dir="uploads" \
