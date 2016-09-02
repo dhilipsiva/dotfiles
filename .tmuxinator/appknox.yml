@@ -15,37 +15,35 @@ windows:
       pre: mycroft
       layout: 487a,178x46,0,0{89x46,0,0[89x23,0,0,1,89x22,0,24,4],88x46,90,0[88x23,90,0,2,88x22,90,24,5]}
       panes:
-        - somearea: git status
-        - commands: git status
         - runserver: echo "./manage.py runserver"
         - celery: echo "./scripts/dev_celery.sh"
+        - commands: git status
 
 
   - sherlock:
       pre: sherlock
       layout: 487a,178x46,0,0{89x46,0,0[89x23,0,0,1,89x22,0,24,4],88x46,90,0[88x23,90,0,2,88x22,90,24,5]}
       panes:
-        - somearea: git status
-        - commands: git status
         - runserver: ./manage.py runserver
         - celery: ./scripts/dev_celery.sh
+        - commands: git status
 
 
   - moriarty:
       pre: moriarty
       layout: afb6,178x46,0,0{88x46,0,0[88x23,0,0,3,88x22,0,24,15],89x46,89,0[89x11,89,0,16,89x11,89,12,21,89x22,89,24,17]}
       panes:
-        - commands: git status
-        - websockify: ./manage.py websockify
-        - minivnc: cd ../minivnc && VNC_SECRET="F3A3EF31-0EFB-459D-8F2A-0C02B60A25CF" DEVICES_PORT=8888 node index.js
         - runserver: ./manage.py runserver 0.0.0.0:8888
         - celery: ./manage.py devices
+        - websockify: ./manage.py websockify
+        - minivnc: cd ../minivnc && VNC_SECRET="F3A3EF31-0EFB-459D-8F2A-0C02B60A25CF" DEVICES_PORT=8888 node index.js
+        - commands: git status
 
   - irene:
       pre: irene
       layout: 8635,238x55,0,0{119x55,0,0,12,118x55,120,0,18}
       panes:
-        - command: git status
         - serve: ember serve
+        - command: git status
 
   - commands: time
