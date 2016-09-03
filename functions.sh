@@ -507,3 +507,8 @@ function email-template-generator() {
     . ~/ENV/personal/email-template-generator/bin/activate
     cd ~/Projects/personal/email-template-generator
 }
+
+function bohemia() {
+	. ~/ENV/appknox/bohemia/bin/activate
+	cd ~/Projects/appknox/bohemia
+}
