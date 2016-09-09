@@ -162,3 +162,7 @@
 	sslCAInfo = /Users/dhilipsiva/.flynn/ca-certs/flynn-1462598803.pem
 [credential "https://git.r3w5.flynnhub.com"]
 	helper = /usr/local/bin/flynn git-credentials
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
