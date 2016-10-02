@@ -60,7 +60,7 @@ augroup END
 " let g:flake8_ignore="W291,W293,E127,E128,E201,E202,E203,E121,E122,E126,E225,E251,E261,E301,E302,E303,E501,E711"
 " ^ That is depricated :(
 
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,.git/*,*/node_modules*/,*/bower_components/*
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,.git/*,*/node_modules/*,*/bower_components/*
 
 set colorcolumn=80
 
