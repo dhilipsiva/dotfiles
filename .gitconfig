@@ -82,6 +82,18 @@
 
     b = branch
 
+	# `git it` both initializes your repository and creates an empty root commit in one quick step
+	it = "!git init && git commit -m “Initial Commit” --allow-empty"
+
+	# Stash
+	st = stash
+	stsh = stash --keep-index
+	staash = stash --include-untracked
+	staaash = stash --all
+
+	# please - push wish lease
+	please = push --force-with-lease
+
 [apply]
     # Detect whitespace errors when applying a patch
     whitespace = fix
