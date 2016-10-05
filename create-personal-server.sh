@@ -1,5 +1,3 @@
-export PERSONAL_SERVER_ZONE = "us-central1-c"
-
 gcloud compute \
 	--project $PERSONAL_CLOUD_PROJECT \
 	instances create $PERSONAL_SERVER_NAME \
