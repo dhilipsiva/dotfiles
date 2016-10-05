@@ -512,3 +512,10 @@ function bohemia() {
 	. ~/ENV/appknox/bohemia/bin/activate
 	cd ~/Projects/appknox/bohemia
 }
+
+function personal-server-ssh {
+	gcloud compute \
+	--project $PERSONAL_CLOUD_PROJECT \
+	ssh \
+	--zone $PERSONAL_SERVER_ZONE $PERSONAL_SERVER_NAME
+}

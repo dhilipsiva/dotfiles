@@ -33,7 +33,8 @@ gcloud compute \
 	--source-ranges "0.0.0.0/0" \
 	--target-tags "https-server"
 
-gcloud compute \
-	--project $PERSONAL_CLOUD_PROJECT \
-	ssh \
-	--zone $PERSONAL_SERVER_ZONE $PERSONAL_SERVER_NAME
+personal-server-ssh
+
+fab-env
+
+fab setup_personal_server
