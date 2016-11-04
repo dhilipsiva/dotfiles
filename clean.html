@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Clean</title>
+    </head>
+    <body>
+        <input id="input" onkeyup="cleanText()"/>
+        <script type="text/javascript" charset="utf-8">
+            function cleanText() {
+                if(this.event.keyCode == 13){
+                    location = "https://www.google.com/#safe=off&q=" + this.event.target.value.replace(/\W/g, ' ').replace(/\s+/g, ' ')
+                }
+            }
+        </script>
+    </body>
+</html>
