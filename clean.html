@@ -3,9 +3,34 @@
     <head>
         <meta charset="utf-8" />
         <title>Clean</title>
+        <style type="text/css" media="all">
+            html, body {
+                width: 100%;
+                height: 100%;
+                color: #444;
+            }
+            textarea {
+                position: absolute;
+                box-sizing: border-box;
+                top: 5%;
+                left: 5%;
+                width: 90%;
+                height: 90%;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-shadow: 0 0 30px rgba(0,0,0,0.1);
+                resize: none;
+                outline: none;
+                font-size: 1.3em;
+                color: #898989;
+                font-family: 'Source Code Pro';
+                font-weight: 300;
+            }
+        </style>
     </head>
     <body>
-        <input id="input" onkeyup="cleanText()"/>
+        <textarea id="input" onkeyup="cleanText()" autofocus=true></textarea>
         <script type="text/javascript" charset="utf-8">
             function cleanText() {
                 if(this.event.keyCode == 13){
