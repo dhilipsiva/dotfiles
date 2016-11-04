@@ -16,7 +16,7 @@ function rs {
 
 # Shortcut to google search from commandline. Handy, huh?
 function goog {
-    open "https://google.com/search?q=$*"
+    open ~/clean.html
 }
 
 # open Dash docs
