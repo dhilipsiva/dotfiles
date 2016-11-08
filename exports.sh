@@ -1,5 +1,5 @@
 export LANG="en_US.UTF-8"
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/opt/ruby/bin:$PATH"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/opt/ruby/bin:$PATH:/usr/local/opt/go/libexec/bin/bin"
 export CUDA_ROOT="/usr/local/cuda/bin"
 export LANG="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
