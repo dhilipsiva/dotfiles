@@ -15,8 +15,8 @@ windows:
       layout: 487a,178x46,0,0{89x46,0,0[89x23,0,0,1,89x22,0,24,4],88x46,90,0[88x23,90,0,2,88x22,90,24,5]}
       panes:
         - runserver: echo "./manage.py runserver"
-        - celery: echo "./scripts/dev_celery.sh"
         - commands: git status
+        - celery: echo "./scripts/dev_celery.sh"
 
 
   - sherlock:
@@ -24,24 +24,24 @@ windows:
       layout: 487a,178x46,0,0{89x46,0,0[89x23,0,0,1,89x22,0,24,4],88x46,90,0[88x23,90,0,2,88x22,90,24,5]}
       panes:
         - runserver: ./manage.py runserver
-        - celery: ./scripts/dev_celery.sh
         - commands: git status
+        - celery: ./scripts/dev_celery.sh
 
 
   - moriarty:
       pre: moriarty
       layout: 487a,178x46,0,0{89x46,0,0[89x23,0,0,1,89x22,0,24,4],88x46,90,0[88x23,90,0,2,88x22,90,24,5]}
       panes:
-        - runserver: ./manage.py runserver 0.0.0.0:8888
-        - celery: ./manage.py devices
-        - websockify: ./manage.py websockify
+        - runserver: echo "./manage.py runserver 0.0.0.0:8888"
         - commands: git status
+        - celery: .echo "/manage.py devices"
+        - websockify: echo "./manage.py websockify"
 
   - irene:
       pre: irene
       layout: 8635,238x55,0,0{119x55,0,0,12,118x55,120,0,18}
       panes:
-        - serve: ember serve
         - command: git status
+        - serve: ember serve
 
   - commands: time
