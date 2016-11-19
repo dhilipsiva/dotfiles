@@ -503,6 +503,11 @@ function neural-doodle() {
 	cd ~/Projects/others/neural-doodle
 }
 
+function bangpy() {
+    . ~/ENV/others/bangpy/bin/activate
+	cd ~/Projects/others/bangpy
+}
+
 function email-template-generator() {
     . ~/ENV/personal/email-template-generator/bin/activate
     cd ~/Projects/personal/email-template-generator
