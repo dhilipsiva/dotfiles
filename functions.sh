@@ -493,9 +493,9 @@ function djocker() {
 	cd ~/Projects/personal/djocker
 }
 
-function inquiry-env() {
-    . ~/ENV/personal/inquiry/bin/activate
-	cd ~/Projects/personal/inquiry
+function termask-env() {
+    . ~/ENV/personal/termask/bin/activate
+	cd ~/Projects/personal/termask
 }
 
 function neural-doodle() {
