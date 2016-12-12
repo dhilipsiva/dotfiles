@@ -12,7 +12,7 @@
     user = dhilipsiva
 
 [diff]
-    tool = vimdiff
+	tool = vimdiff
 
 [alias]
     # View abbreviated SHA, description, and history graph of the latest 20 commits
@@ -94,6 +94,12 @@
 	# please - push wish lease
 	please = push --force-with-lease
 
+	# git-open
+	o = open
+
+	# View merge requests
+	mr = !sh -c 'git fetch $1 merge-requests/$2/head:mr-$1-$2 && git checkout mr-$1-$2' -
+
 [apply]
     # Detect whitespace errors when applying a patch
     whitespace = fix
@@ -135,6 +141,7 @@
 [merge]
     # Include summaries of merged commits in newly created merge commit messages
     log = true
+	tool = vimdiff
 
 # URL shorthands
 [url "git@github.com:"]
@@ -180,3 +187,5 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+[rebase]
+	autosquash = true
