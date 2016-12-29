@@ -524,3 +524,9 @@ function personal-server-ssh {
 	ssh \
 	--zone $PERSONAL_SERVER_ZONE $PERSONAL_SERVER_NAME
 }
+
+
+function hostscli-env() {
+    . ~/ENV/personal/hostscli-env/bin/activate
+	cd ~/Projects/personal/hostscli
+}
