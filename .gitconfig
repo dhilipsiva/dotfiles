@@ -12,7 +12,7 @@
     user = dhilipsiva
 
 [diff]
-	tool = vimdiff
+    tool = vimdiff
 
 [alias]
     # View abbreviated SHA, description, and history graph of the latest 20 commits
@@ -23,7 +23,7 @@
 
     a = add
 
-	f = fetch
+    f = fetch
 
     # Show the diff between the latest commit and the current state
     d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --color --patch-with-stat | diff-so-fancy"
@@ -38,8 +38,8 @@
 
     sy = !"git pull origin $(git rev-parse --abbrev-ref HEAD) && git push origin $(git rev-parse --abbrev-ref HEAD)"
 
-	# push tags
-	pt = push --tags
+    # push tags
+    pt = push --tags
 
 
     # Clone a repository including all submodules
@@ -82,23 +82,23 @@
 
     b = branch
 
-	# `git it` both initializes your repository and creates an empty root commit in one quick step
-	it = "!git init && git commit -m “Initial Commit” --allow-empty"
+    # `git it` both initializes your repository and creates an empty root commit in one quick step
+    it = "!git init && git commit -m “Initial Commit” --allow-empty"
 
-	# Stash
-	st = stash
-	stsh = stash --keep-index
-	staash = stash --include-untracked
-	staaash = stash --all
+    # Stash
+    st = stash
+    stsh = stash --keep-index
+    staash = stash --include-untracked
+    staaash = stash --all
 
-	# please - push wish lease
-	please = push --force-with-lease
+    # please - push wish lease
+    please = push --force-with-lease
 
-	# git-open
-	o = open
+    # git-open
+    o = open
 
-	# View merge requests
-	mr = !sh -c 'git fetch $1 merge-requests/$2/head:mr-$1-$2 && git checkout mr-$1-$2' -
+    # View merge requests
+    mr = !sh -c 'git fetch $1 merge-requests/$2/head:mr-$1-$2 && git checkout mr-$1-$2' -
 
 [apply]
     # Detect whitespace errors when applying a patch
@@ -106,7 +106,7 @@
 
 [core]
     # Use custom `.gitignore` and `.gitattributes`
-	excludesfile = /Users/dhilipsiva/.gitignore_global
+    excludesfile = /Users/dhilipsiva/.gitignore_global
     attributesfile = ~/.gitattributes
     # Treat spaces before tabs and all kinds of trailing whitespace as an error.
     # [default] trailing-space: looks for spaces at the end of a line
@@ -141,7 +141,7 @@
 [merge]
     # Include summaries of merged commits in newly created merge commit messages
     log = true
-	tool = vimdiff
+    tool = vimdiff
 
 # URL shorthands
 [url "git@github.com:"]
@@ -164,28 +164,28 @@
     default = matching
 
 [filter "media"]
-	required = true
-	clean = git media clean %f
-	smudge = git media smudge %f
+    required = true
+    clean = git media clean %f
+    smudge = git media smudge %f
 [filter "hawser"]
-	clean = git hawser clean %f
-	smudge = git hawser smudge %f
-	required = true
+    clean = git hawser clean %f
+    smudge = git hawser smudge %f
+    required = true
 [http "https://git.yegj.flynnhub.com"]
-	sslCAInfo = /Users/dhilipsiva/.flynn/ca-certs/flynn-1458301815.pem
+    sslCAInfo = /Users/dhilipsiva/.flynn/ca-certs/flynn-1458301815.pem
 [credential "https://git.yegj.flynnhub.com"]
-	helper = /usr/local/bin/flynn git-credentials
+    helper = /usr/local/bin/flynn git-credentials
 [http "https://git.kr31.flynnhub.com"]
-	sslCAInfo = /Users/dhilipsiva/.flynn/ca-certs/flynn-1462570575.pem
+    sslCAInfo = /Users/dhilipsiva/.flynn/ca-certs/flynn-1462570575.pem
 [credential "https://git.kr31.flynnhub.com"]
-	helper = /usr/local/bin/flynn git-credentials
+    helper = /usr/local/bin/flynn git-credentials
 [http "https://git.r3w5.flynnhub.com"]
-	sslCAInfo = /Users/dhilipsiva/.flynn/ca-certs/flynn-1462598803.pem
+    sslCAInfo = /Users/dhilipsiva/.flynn/ca-certs/flynn-1462598803.pem
 [credential "https://git.r3w5.flynnhub.com"]
-	helper = /usr/local/bin/flynn git-credentials
+    helper = /usr/local/bin/flynn git-credentials
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
+    clean = git-lfs clean %f
+    smudge = git-lfs smudge %f
+    required = true
 [rebase]
-	autosquash = true
+    autosquash = true

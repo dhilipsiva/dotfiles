@@ -1,0 +1,14 @@
+name: proxy
+root: ~/Projects/personal/hacks/
+tmux_options: -f ~/.tmux.conf
+
+windows:
+  - polipo_tor:
+      panes:
+        - tor: tor
+        - polipo: polipo -c ~/polipo.config
+        - ip: ifconfig
+  - mitmproxy:
+      panes:
+        - mitmproxy: mitmproxy -U http://localhost:8123
+
