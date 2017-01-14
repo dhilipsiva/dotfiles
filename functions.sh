@@ -28,6 +28,8 @@ function search {
     grep -irl \
         --exclude=\*.{pyc,swp,un~,png,jpg} \
         --exclude-dir=".git" \
+        --exclude-dir=".cache" \
+        --exclude-dir=".tox" \
         --exclude-dir="node_modules" \
         --exclude-dir="bower_components" \
         --exclude-dir="dist" \
