@@ -32,11 +32,11 @@
     di = !"d() { git diff --color --patch-with-stat HEAD~$1 | diff-so-fancy; }; git diff-index --quiet HEAD -- || clear; d"
 
     # Pull in remote changes for the current repository and all its submodules
-    pl = !"git pull origin $(git rev-parse --abbrev-ref HEAD)"
+	pl = !"git pull origin $(git rev-parse --abbrev-ref HEAD) --rebase "
 
     p = !"git push origin $(git rev-parse --abbrev-ref HEAD)"
 
-    sy = !"git pull origin $(git rev-parse --abbrev-ref HEAD) && git push origin $(git rev-parse --abbrev-ref HEAD)"
+    sy = !"git pull origin $(git rev-parse --abbrev-ref HEAD) --rebase  && git push origin $(git rev-parse --abbrev-ref HEAD)"
 
     # push tags
     pt = push --tags
