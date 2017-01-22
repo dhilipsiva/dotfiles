@@ -79,3 +79,4 @@ complete -F _docker-compose dc
 
 source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc
 source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc
+eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"
