@@ -145,9 +145,6 @@
 [submodule ".vim/bundle/ember"]
 	path = .vim/bundle/ember
 	url = git@github.com:dsawardekar/ember.vim.git
-[submodule ".vim/bundle/ctrlp"]
-	path = .vim/bundle/ctrlp
-	url = git@github.com:ctrlpvim/ctrlp.vim.git
 [submodule ".vim/bundle/wiki"]
 	path = .vim/bundle/wiki
 	url = https://github.com/vimwiki/vimwiki.git
