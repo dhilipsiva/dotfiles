@@ -24,7 +24,7 @@ windows:
       layout: 487a,178x46,0,0{89x46,0,0[89x23,0,0,1,89x22,0,24,4],88x46,90,0[88x23,90,0,2,88x22,90,24,5]}
       panes:
         - runserver: ./manage.py runserver
-        - commands: git sy && g o
+        - commands: g sy && g o
         - celery: ./scripts/dev_celery.sh
 
 
@@ -33,7 +33,7 @@ windows:
       layout: 487a,178x46,0,0{89x46,0,0[89x23,0,0,1,89x22,0,24,4],88x46,90,0[88x23,90,0,2,88x22,90,24,5]}
       panes:
         - runserver: echo "./manage.py runserver 0.0.0.0:8888"
-        - commands: git sy && g o
+        - commands: g sy && g o
         - celery: .echo "/manage.py devices"
         - websockify: echo "./manage.py websockify"
 
@@ -41,7 +41,7 @@ windows:
       pre: irene
       layout: 8635,238x55,0,0{119x55,0,0,12,118x55,120,0,18}
       panes:
-        - commands: git sy && g o
+        - commands: g sy && g o
         - serve: ember serve
 
   - commands: time
