@@ -150,4 +150,4 @@
 	url = https://github.com/vimwiki/vimwiki.git
 [submodule ".vim/bundle/ctrlp"]
 	path = .vim/bundle/ctrlp
-	url = https://github.com/ctrlpvim/ctrlp.vim.git
+	url = git@github.com:ctrlpvim/ctrlp.vim.git
