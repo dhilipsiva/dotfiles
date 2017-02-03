@@ -9,5 +9,6 @@
 - PwdMan confs
 - Hacks foldder
 - Commit test repo
-- Gmail pwd
+- Gmail,dropbox pwd
 - Data
+- PWDMAN_PATH, PWDMAN_SALT
