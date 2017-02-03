@@ -5,3 +5,9 @@
 - Private SSH Keys
 - private.sh
 - tmuxinator confs
+- Keys
+- PwdMan confs
+- Hacks foldder
+- Commit test repo
+- Gmail pwd
+- Data
