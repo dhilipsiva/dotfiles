@@ -12,3 +12,4 @@
 - Gmail,dropbox pwd
 - Data
 - PWDMAN_PATH, PWDMAN_SALT
+- Sticky Notes & VimWiki
