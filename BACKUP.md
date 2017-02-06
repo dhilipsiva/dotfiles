@@ -2,7 +2,7 @@
 
 - Make sure to commit and push changes to all the repos
 - Generate passwords for google, dropbox, icloud, hdfc and other important accounts.
-- Private SSH Keys
+- Private SSH Keys & GPG Keys
 - private.sh
 - tmuxinator confs
 - Keys
