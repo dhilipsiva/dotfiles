@@ -532,3 +532,18 @@ function hostscli-env() {
     . ~/ENV/personal/hostscli-env/bin/activate
 	cd ~/Projects/personal/hostscli
 }
+
+function thefuck-env() {
+    . ~/ENV/others/thefuck/bin/activate
+	cd ~/Projects/others/thefuck
+}
+
+function default() {
+    . ~/ENV/default/bin/activate
+}
+
+function sicp {
+    cd ~/Projects/personal/sicp
+}
+
+

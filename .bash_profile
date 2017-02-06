@@ -81,3 +81,6 @@ source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.b
 source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc
 
 eval $(gpg-agent)
+eval "$(thefuck --alias)"
+
+. ~/ENV/default/bin/activate
