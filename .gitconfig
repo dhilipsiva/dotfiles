@@ -52,7 +52,7 @@
     t = tag -s
 
     # Switch to a branch, creating it if necessary
-    co = checkout -B
+    co = checkout
 
     # Show verbose output about tags, branches or remotes
     tags = tag -l
