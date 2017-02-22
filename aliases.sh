@@ -135,3 +135,5 @@ alias m="mvim"
 
 # http://stackoverflow.com/a/30793515/1235072
 alias dfimage="docker run -v /var/run/docker.sock:/var/run/docker.sock --rm centurylink/dockerfile-from-image"
+
+alias geany="mvim"

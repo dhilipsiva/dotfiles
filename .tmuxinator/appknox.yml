@@ -14,33 +14,31 @@ windows:
       pre: mycroft
       panes:
         - runserver: echo "./manage.py runserver"
-        - commands: g sy && g o
         - celery: echo "./scripts/dev_celery.sh"
-        - socket: echo "socket"
+        - commands: g sy
+        - socket: echo "./scripts/socket.sh"
 
 
   - sherlock:
       pre: sherlock
       panes:
         - runserver: ./manage.py runserver
-        - commands: g sy && g o
         - celery: ./scripts/dev_celery.sh
-        - socket: echo "socket"
-
+        - commands: g sy
+        - socket: ./scripts/socket.sh
 
   - moriarty:
       pre: moriarty
       panes:
         - runserver: echo "./manage.py runserver 0.0.0.0:8888"
-        - commands: g sy && g o
         - celery: .echo "/manage.py devices"
+        - commands: g sy
         - websockify: echo "./manage.py websockify"
 
   - irene:
       pre: irene
-      layout: 8635,238x55,0,0{119x55,0,0,12,118x55,120,0,18}
       panes:
-        - commands: g sy && g o
+        - commands: g sy
         - serve: ember serve
 
   - commands: time
