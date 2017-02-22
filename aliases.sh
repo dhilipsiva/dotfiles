@@ -16,6 +16,7 @@ alias r="rails"
 alias e="ember"
 alias d="docker"
 alias f="fuck"
+alias b="brew"
 alias dm="docker-machine"
 alias dc="docker-compose"
 
