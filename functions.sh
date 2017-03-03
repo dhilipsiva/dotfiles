@@ -546,4 +546,9 @@ function sicp {
     cd ~/Projects/personal/sicp
 }
 
+function djaws() {
+    . ~/ENV/personal/djaws/bin/activate
+	cd ~/Projects/personal/djaws
+}
+
 

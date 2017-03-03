@@ -6,19 +6,20 @@ alias .....="cd ../../../.."
 alias -- -="cd -"
 
 # Shortcuts
-alias p="cd ~/projects"
+alias b="brew"
+alias d="docker"
+alias dc="docker-compose"
+alias dm="docker-machine"
+alias e="ember"
+alias f="fuck"
 alias g="git"
 alias h="history"
+alias p="cd ~/projects"
 alias p="python"
 alias q="exit"
-alias t="date"
 alias r="rails"
-alias e="ember"
-alias d="docker"
-alias f="fuck"
-alias b="brew"
-alias dm="docker-machine"
-alias dc="docker-compose"
+alias s="scheme"
+alias t="date"
 
 
 # Detect which `ls` flavor is in use
