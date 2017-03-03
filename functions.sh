@@ -533,6 +533,11 @@ function hostscli-env() {
 	cd ~/Projects/personal/hostscli
 }
 
+function 32-24-34() {
+    . ~/ENV/appknox/32-24-34/bin/activate
+	cd ~/Projects/appknox/32-24-34
+}
+
 function thefuck-env() {
     . ~/ENV/others/thefuck/bin/activate
 	cd ~/Projects/others/thefuck
