@@ -556,4 +556,7 @@ function djaws() {
 	cd ~/Projects/personal/djaws
 }
 
-
+function statboard() {
+    . ~/ENV/appknox/statboard/bin/activate
+	cd ~/Projects/appknox/statboard
+}

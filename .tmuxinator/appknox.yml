@@ -15,7 +15,7 @@ windows:
       panes:
         - runserver: echo "./manage.py runserver"
         - celery: echo "./scripts/dev_celery.sh"
-        - commands: g sy
+        - commands: g pl
         - socket: echo "./scripts/socket.sh"
 
 
@@ -24,7 +24,7 @@ windows:
       panes:
         - runserver: ./manage.py runserver
         - celery: ./scripts/dev_celery.sh
-        - commands: g sy
+        - commands: g pl
         - socket: ./scripts/socket.sh
 
   - moriarty:
@@ -32,13 +32,13 @@ windows:
       panes:
         - runserver: echo "./manage.py runserver 0.0.0.0:8888"
         - celery: .echo "/manage.py devices"
-        - commands: g sy
+        - commands: g pl
         - websockify: echo "./manage.py websockify"
 
   - irene:
       pre: irene
       panes:
-        - commands: g sy
+        - commands: g pl
         - serve: ember serve
 
   - commands: time
