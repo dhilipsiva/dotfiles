@@ -560,3 +560,8 @@ function statboard() {
     . ~/ENV/appknox/statboard/bin/activate
 	cd ~/Projects/appknox/statboard
 }
+
+function hm {
+	. ~/ENV/personal/hm/bin/activate
+	cd ~/Projects/personal/HackerMail
+}
