@@ -565,3 +565,8 @@ function hm {
 	. ~/ENV/personal/hm/bin/activate
 	cd ~/Projects/personal/HackerMail
 }
+
+function ezhome {
+	. ~/ENV/others/ezhome/bin/activate
+	cd ~/Projects/others/ezhome
+}
