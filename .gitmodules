@@ -154,3 +154,6 @@
 [submodule ".vim/bundle/vitality"]
 	path = .vim/bundle/vitality
 	url = git@github.com:sjl/vitality.vim.git
+[submodule ".vim/bundle/kite"]
+	path = .vim/bundle/kite
+	url = git@github.com:kiteco/vim-plugin.git
