@@ -570,3 +570,7 @@ function ezhome {
 	. ~/ENV/others/ezhome/bin/activate
 	cd ~/Projects/others/ezhome
 }
+
+function ak_prs {
+open "https://github.com/pulls?q=is%3Aopen+is%3Apr+user%3Aappknox+label%3Areview"
+}
