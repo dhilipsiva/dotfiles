@@ -157,3 +157,6 @@
 [submodule ".vim/bundle/kite"]
 	path = .vim/bundle/kite
 	url = git@github.com:kiteco/vim-plugin.git
+[submodule ".vim/bundle/sketch"]
+	path = .vim/bundle/sketch
+	url = git@github.com:vim-scripts/sketch.vim.git

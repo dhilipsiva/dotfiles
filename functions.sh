@@ -466,6 +466,12 @@ function playconda() {
 	cd ~/Projects/others/playconda
 }
 
+
+function mp () {
+    . ~/ENV/others/mp/bin/activate
+	cd ~/Projects/others/mypaint
+}
+
 function pwdman-env() {
     . ~/ENV/personal/pwdman/bin/activate
 	cd ~/Projects/personal/pwdman
