@@ -31,9 +31,6 @@
 [submodule ".vim/bundle/html5"]
 	path = .vim/bundle/html5
 	url = git@github.com:othree/html5.vim.git
-[submodule ".vim/bundle/indent-guides"]
-	path = .vim/bundle/indent-guides
-	url = git@github.com:nathanaelkane/vim-indent-guides.git
 [submodule ".vim/bundle/javascript"]
 	path = .vim/bundle/javascript
 	url = git@github.com:pangloss/vim-javascript.git
@@ -112,9 +109,6 @@
 [submodule ".vim/bundle/editorconfig"]
 	path = .vim/bundle/editorconfig
 	url = git@github.com:editorconfig/editorconfig-vim.git
-[submodule ".vim/bundle/indentline"]
-	path = .vim/bundle/indentline
-	url = git@github.com:Yggdroot/indentLine.git
 [submodule ".vim/bundle/syntaxrange"]
 	path = .vim/bundle/syntaxrange
 	url = git@github.com:vim-scripts/SyntaxRange.git
