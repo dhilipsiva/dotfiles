@@ -572,6 +572,11 @@ function hm {
 	cd ~/Projects/personal/HackerMail
 }
 
+function chaibase {
+	. ~/ENV/chaibase/chaibase/bin/activate
+	cd ~/Projects/chaibase/chaibase
+}
+
 function ezhome {
 	. ~/ENV/others/ezhome/bin/activate
 	cd ~/Projects/others/ezhome
