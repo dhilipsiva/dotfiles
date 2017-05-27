@@ -26,7 +26,7 @@ function dash {
 
 function search {
     grep -irl \
-        --exclude=\*.{pyc,swp,un~,png,jpg} \
+        --exclude=\*.{pyc,swp,un~,png,jpg,o} \
         --exclude-dir=".git" \
         --exclude-dir=".cache" \
         --exclude-dir=".tox" \
@@ -579,4 +579,10 @@ function ezhome {
 
 function ak_prs {
 open "https://github.com/pulls?q=is%3Aopen+is%3Apr+user%3Aappknox+label%3Areview"
+}
+
+function talk_time {
+	utimer -c 15m && say "Half Time" && \
+	utimer -c 10m && say "last 5 mins" && \
+	utimer -c 05m && say "Time for questions"
 }
