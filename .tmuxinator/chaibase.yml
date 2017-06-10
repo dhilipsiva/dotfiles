@@ -1,6 +1,6 @@
 # ~/.tmuxinator/chaibase.yml
 
-name: appknox
+name: chaibase
 tmux_options: -f ~/.tmux.conf
 windows:
 
