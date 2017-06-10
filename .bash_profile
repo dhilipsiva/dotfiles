@@ -86,3 +86,4 @@ eval $(gpg-agent)
 . ~/ENV/default/bin/activate
 
 export PATH="/usr/local/opt/gettext/bin:$PATH"
+export ANDROID_SDK_ROOT=/usr/local/share/android-sdk

@@ -1,0 +1,24 @@
+# ~/.tmuxinator/chaibase.yml
+
+name: appknox
+tmux_options: -f ~/.tmux.conf
+windows:
+
+  - chaibase:
+      pre: chaibase
+      panes:
+        - runserver: ./manage.py runserver
+        - celery: git status
+
+  - chaibase-ember:
+      pre: chaibase-ember
+      panes:
+        - runserver: ember serve
+        - celery: git status
+
+  - chaibase-agent:
+      pre: chaibase-agent
+      panes:
+        - runserver: ./manage.py runserver
+        - celery: git status
+

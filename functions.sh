@@ -577,6 +577,18 @@ function chaibase {
 	cd ~/Projects/chaibase/chaibase
 }
 
+
+function chaibase-ember {
+	. ~/ENV/chaibase/chaibase-ember/bin/activate
+	cd ~/Projects/chaibase/chaibase-ember
+}
+
+
+function chaibase-agent {
+	. ~/ENV/chaibase/chaibase-agent/bin/activate
+	cd ~/Projects/chaibase/chaibase-agent
+}
+
 function ezhome {
 	. ~/ENV/others/ezhome/bin/activate
 	cd ~/Projects/others/ezhome
@@ -590,4 +602,22 @@ function talk_time {
 	utimer -c 15m && say "Half Time" && \
 	utimer -c 10m && say "last 5 mins" && \
 	utimer -c 05m && say "Time for questions"
+}
+
+function mdb-sqlite {
+	rm -rf sqlite
+	mdb-schema $1 sqlite > schema.sql
+	mkdir -p sqlite
+	mkdir -p sql
+	for i in $( mdb-tables $1 ); do echo $i ; mdb-export -D "%Y-%m-%d %H:%M:%S" -H -I sqlite $1 $i > sql/$i.sql; done
+
+	mv schema.sql sqlite
+	mv sql sqlite
+	cd sqlite
+
+	cat schema.sql | sqlite3 db.sqlite3
+
+	for f in sql/* ; do echo $f && cat $f | sqlite3 db.sqlite3; done
+
+	cd ..
 }
