@@ -6,19 +6,30 @@ windows:
 
   - chaibase:
       pre: chaibase
+      layout: even-horizontal
       panes:
-        - runserver: ./manage.py runserver
-        - celery: git status
+        - server: ./manage.py runserver
+        - cmd: git status
 
   - chaibase-ember:
       pre: chaibase-ember
+      layout: even-horizontal
       panes:
-        - runserver: ember serve
-        - celery: git status
+        - server: ember serve
+        - cmd: git status
 
   - chaibase-agent:
       pre: chaibase-agent
+      layout: even-horizontal
       panes:
-        - runserver: ./manage.py runserver
-        - celery: git status
+        - server: python app.py
+        - cmd: git status
+
+  - chaibase-sass:
+      pre: chaibase-sass
+      layout: even-horizontal
+      panes:
+        - server: time
+        - cmd: git status
+
 

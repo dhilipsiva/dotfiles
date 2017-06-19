@@ -14,7 +14,7 @@ alias e="ember"
 alias f="fuck"
 alias g="git"
 alias h="history"
-alias p="cd ~/projects"
+alias p="cd ~/Projects"
 alias p="python"
 alias q="exit"
 alias r="rails"
@@ -134,8 +134,7 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
 alias m="mvim"
+alias v="vimr"
 
 # http://stackoverflow.com/a/30793515/1235072
 alias dfimage="docker run -v /var/run/docker.sock:/var/run/docker.sock --rm centurylink/dockerfile-from-image"
-
-alias geany="mvim"

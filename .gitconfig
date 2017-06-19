@@ -184,9 +184,10 @@
 [credential "https://git.r3w5.flynnhub.com"]
     helper = /usr/local/bin/flynn git-credentials
 [filter "lfs"]
-    clean = git-lfs clean %f
-    smudge = git-lfs smudge %f
-    required = true
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
 [rebase]
     autosquash = true
 [commit]

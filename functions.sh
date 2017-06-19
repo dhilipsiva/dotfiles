@@ -577,12 +577,15 @@ function chaibase {
 	cd ~/Projects/chaibase/chaibase
 }
 
-
 function chaibase-ember {
 	. ~/ENV/chaibase/chaibase-ember/bin/activate
 	cd ~/Projects/chaibase/chaibase-ember
 }
 
+function chaibase-sass {
+	. ~/ENV/chaibase/chaibase-ember/bin/activate
+	cd ~/Projects/chaibase/chaibase-sass
+}
 
 function chaibase-agent {
 	. ~/ENV/chaibase/chaibase-agent/bin/activate
@@ -620,4 +623,9 @@ function mdb-sqlite {
 	for f in sql/* ; do echo $f && cat $f | sqlite3 db.sqlite3; done
 
 	cd ..
+}
+
+function fix-git {
+    git gc --prune=now
+    git remote prune origin
 }
