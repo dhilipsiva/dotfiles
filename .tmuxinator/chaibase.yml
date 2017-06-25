@@ -4,6 +4,13 @@ name: chaibase
 tmux_options: -f ~/.tmux.conf
 windows:
 
+  - dbs:
+      panes:
+        - redis: redis-server /usr/local/etc/redis.conf
+        - postgres: pg_ctl -D /usr/local/var/postgres start
+        - rabbitmq: rabbitmq-server
+        - minio: minio server ~/Projects/minio
+
   - chaibase:
       pre: chaibase
       layout: even-horizontal
