@@ -10,5 +10,4 @@ windows:
         - ip: ifconfig
   - mitmproxy:
       panes:
-        - mitmproxy: mitmproxy -U http://localhost:8123
-
+        - mitmproxy: mitmproxy --ignore ^(.+\.)?branch\.io:443$ --ignore ^(.+\.)?facebook\.com:443$ --ignore ^(.+\.)?mixpanel\.com:443$ --ignore ^(.+\.)?crashlytics\.com:443$ --ignore ^(.+\.)?instabug\.com:443$ --ignore ^(.+\.)?amplitude\.com:443$ --ignore ^(.+\.)?wzrkt\.com:443$ --ignore ^(.+\.)?google\.com:443$ --ignore ^(.+\.)?googleapis\.com:443$ -U http://localhost:8123
