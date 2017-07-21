@@ -34,7 +34,8 @@ filetype plugin indent on
 
 "post Pathogen functions
 if has("gui_running")
-    set guifont=Monaco:h12    "favorite font
+    set macligatures
+    set guifont=Fira\ Code:h12
     set guioptions-=m           "remove menu bar
     set guioptions-=T           "remove toolbar
     set guioptions-=r           "remove right-hand scroll bar
