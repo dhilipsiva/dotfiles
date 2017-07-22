@@ -121,9 +121,6 @@
 [submodule ".vim/bundle/neocomplete"]
 	path = .vim/bundle/neocomplete
 	url = git@github.com:Shougo/neocomplete.vim.git
-[submodule ".vim/bundle/javacomplete2"]
-	path = .vim/bundle/javacomplete2
-	url = git@github.com:artur-shaik/vim-javacomplete2.git
 [submodule ".vim/bundle/maven-plugin"]
 	path = .vim/bundle/maven-plugin
 	url = git@github.com:mikelue/vim-maven-plugin.git
