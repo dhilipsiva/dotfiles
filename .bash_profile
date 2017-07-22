@@ -46,6 +46,12 @@ if [ "$(uname)" == "Darwin" ]; then
 		if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
     		source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
 		fi
+        #/usr/local/Caskroom/google-cloud-sdk
+		if [ -f "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc" ]; then
+            source $(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc
+            source $(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc
+            source <(kubectl completion bash)
+		fi
     } || {
     echo "Brew not installed.."
 }
@@ -76,10 +82,6 @@ complete -F _docker d
 complete -F _docker-machine dm
 
 complete -F _docker-compose dc
-
-source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc
-source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc
-source <(kubectl completion bash)
 
 eval $(gpg-agent)
 
