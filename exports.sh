@@ -86,6 +86,8 @@ export LESS_TERMCAP_so="$ORANGE"
 export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us="$PURPLE"
 
+export ANDROID_HOME=/usr/local/opt/android-sdk
+
 export FIGNORE=$FIGNORE:.hi:.pyc:.o:.swp
 export GOPATH=/usr/local/opt/go/libexec/bin
 export PATH=$PATH:$GOPATH
