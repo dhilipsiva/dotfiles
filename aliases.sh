@@ -20,6 +20,7 @@ alias q="exit"
 alias r="rails"
 alias s="scheme"
 alias t="date"
+alias shba="sudo hostscli block_all"
 
 
 # Detect which `ls` flavor is in use

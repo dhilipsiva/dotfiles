@@ -44,6 +44,7 @@ if [ "$(uname)" == "Darwin" ]; then
             . $(brew --prefix)/share/bash-completion/bash_completion
         fi
 		if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
+            __GIT_PROMPT_DIR="/usr/local/opt/bash-git-prompt/share"
     		source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
 		fi
         #/usr/local/Caskroom/google-cloud-sdk
@@ -88,3 +89,5 @@ complete -F _docker-compose dc
 . ~/ENV/default/bin/activate
 
 export PATH="/usr/local/opt/gettext/bin:$PATH"
+
+source mux.bash
