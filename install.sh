@@ -23,5 +23,7 @@ echo "Installing Auto updater"
 mkdir -p ~/Library/LaunchAgents
 cp com.dhilipsiva.dependencies_updater.plist ~/Library/LaunchAgents/
 echo "installing com.dhilipsiva.dependencies_updater.plist..."
-launchctl load -w ~/Library/LaunchAgents/com.dhilipsiva.dependencies_updater.plist
+if [ "$(uname)" == "Darwin" ]; then
+    launchctl load -w ~/Library/LaunchAgents/com.dhilipsiva.dependencies_updater.plist
+fi
 ./copy.sh
