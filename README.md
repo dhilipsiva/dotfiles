@@ -1,3 +1,9 @@
+DEPRECATED
+==========
+
+My new `.files` has been moved to [dhilipsiva/.files](https://github.com/dhilipsiva/.files).
+
+
 dotfiles
 ========
 
