@@ -99,3 +99,4 @@ export LDFLAGS=-L/usr/local/opt/openssl/lib:$LDFLAGS
 export CPPFLAGS=-I/usr/local/opt/openssl/include
 
 export PATH=$PATH:/usr/local/Cellar/gettext/0.19.8.1/bin
+export XML_CATALOG_FILES=/usr/local/etc/xml/catalog
